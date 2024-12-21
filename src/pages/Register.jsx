@@ -25,6 +25,21 @@ const Register = () => {
             }
         });
     };
+    const postToDB = (newUser) => {
+        fetch("http://localhost:5000/users", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(newUser),
+        })
+            .then((res) => res.json())
+            .then((data) => {
+                if (data.insertedId) {
+                    console.log("User created successfully at db");
+                }
+            });
+    };
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -50,12 +65,14 @@ const Register = () => {
             setError("Password must be at least 6 characters long.");
             return;
         }
-        const user = { name, photo, email };
+        
 
         createUser(email, password)
             .then((result) => {
                 setUser(result.user);
                 setError('');
+                const user = { name, photo, email };
+                postToDB(user);
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
                         sweetAlert();
@@ -74,6 +91,8 @@ const Register = () => {
         signInWithGoogle()
             .then((result) => {
                 setUser(result.user);
+                const user = { name: result.user.displayName, photo: result.user.photoURL, email: result.user.email };
+                postToDB(user);
                 sweetAlert();
             })
             .catch((error) => {
