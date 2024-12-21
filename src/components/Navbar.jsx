@@ -1,15 +1,15 @@
+import { RiArrowDropDownLine } from "react-icons/ri";
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 
 const Navbar = () => {
-    const {user, logOut} = useAuth();
+    const { user, logOut } = useAuth();
 
     const links = <div className='flex gap-4'>
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/allFoods'>All Foods</NavLink></li>
         <li><NavLink to='/gallery'>Gallery</NavLink></li>
-        <li><NavLink to='/addFood'>Add Food</NavLink></li>
     </div>
 
     return (
@@ -39,21 +39,37 @@ const Navbar = () => {
                             }
                         </ul>
                     </div>
-                    <NavLink to='/' className="btn btn-ghost text-xl">EquiSports</NavLink>
+                    <NavLink to='/' className="btn btn-ghost text-xl">BiteManager</NavLink>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                            {
-                                links
-                            }
+                        {
+                            links
+                        }
                     </ul>
                 </div>
                 <div className="navbar-end">
                     {
                         user?.email ?
-                        <button onClick={logOut} className="btn btn-outline btn-error">Logout</button>
-                        :
-                        <NavLink to='/login' className="btn btn-outline btn-error">Login</NavLink>
+                            <div className='flex gap-4'>
+                                <div className="dropdown dropdown-end  border rounded-xl">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar flex">
+                                        <div className="w-10 rounded-full">
+                                            <img src={user?.photoURL} />
+                                        </div>
+                                        <p className="text-4xl"><RiArrowDropDownLine /></p>
+                                    </label>
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                        <li><Link to='/myFoods'>My Foods</Link></li>
+                                        <li><Link to='/addFood'>Add Food</Link></li>
+                                        <li><Link to='/myOrders'>My Orders</Link></li>
+                                    </ul>
+
+                                </div>
+                                <button onClick={logOut} className="btn btn-outline btn-error">Logout</button>
+                            </div>
+                            :
+                            <NavLink to='/login' className="btn btn-outline btn-error">Login</NavLink>
                     }
                 </div>
             </div>

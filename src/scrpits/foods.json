@@ -1,0 +1,2902 @@
+[
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 17,
+    "price": 24,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Nigeria",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 451,
+      "protein": 13,
+      "carbs": 32,
+      "fat": 20
+    },
+    "totalSaleInThisMonth": 93,
+    "preparationTime": "50 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 15,
+    "price": 27,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Egypt",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 453,
+      "protein": 26,
+      "carbs": 90,
+      "fat": 19
+    },
+    "totalSaleInThisMonth": 103,
+    "preparationTime": "38 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 7,
+    "price": 11,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Saint Martin",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 489,
+      "protein": 22,
+      "carbs": 60,
+      "fat": 48
+    },
+    "totalSaleInThisMonth": 29,
+    "preparationTime": "29 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 4,
+    "price": 6,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Guadeloupe",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 192,
+      "protein": 24,
+      "carbs": 22,
+      "fat": 24
+    },
+    "totalSaleInThisMonth": 23,
+    "preparationTime": "28 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 10,
+    "price": 17,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Western Sahara",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 446,
+      "protein": 12,
+      "carbs": 55,
+      "fat": 34
+    },
+    "totalSaleInThisMonth": 140,
+    "preparationTime": "10 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Egg Fried Rice",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 16,
+    "price": 45,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Uganda",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 197,
+      "protein": 26,
+      "carbs": 41,
+      "fat": 10
+    },
+    "totalSaleInThisMonth": 148,
+    "preparationTime": "29 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 5,
+    "price": 13,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Algeria",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 353,
+      "protein": 28,
+      "carbs": 52,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 164,
+    "preparationTime": "55 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 15,
+    "price": 41,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Estonia",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 272,
+      "protein": 37,
+      "carbs": 95,
+      "fat": 20
+    },
+    "totalSaleInThisMonth": 31,
+    "preparationTime": "13 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 6,
+    "price": 42,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Aland Islands",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 398,
+      "protein": 9,
+      "carbs": 55,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 75,
+    "preparationTime": "18 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 10,
+    "price": 32,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Marshall Islands",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 157,
+      "protein": 10,
+      "carbs": 84,
+      "fat": 44
+    },
+    "totalSaleInThisMonth": 71,
+    "preparationTime": "58 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 10,
+    "price": 18,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Sudan",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 152,
+      "protein": 30,
+      "carbs": 49,
+      "fat": 33
+    },
+    "totalSaleInThisMonth": 107,
+    "preparationTime": "59 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Egg Fried Rice",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 17,
+    "price": 27,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "South Georgia and the South Sandwich Islands",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 246,
+      "protein": 21,
+      "carbs": 34,
+      "fat": 34
+    },
+    "totalSaleInThisMonth": 141,
+    "preparationTime": "39 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 12,
+    "price": 26,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Kuwait",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 224,
+      "protein": 29,
+      "carbs": 98,
+      "fat": 31
+    },
+    "totalSaleInThisMonth": 155,
+    "preparationTime": "14 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Spaghetti Carbonara",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 9,
+    "price": 7,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Brazil",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 228,
+      "protein": 36,
+      "carbs": 70,
+      "fat": 15
+    },
+    "totalSaleInThisMonth": 55,
+    "preparationTime": "50 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 15,
+    "price": 9,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Puerto Rico",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 339,
+      "protein": 43,
+      "carbs": 75,
+      "fat": 36
+    },
+    "totalSaleInThisMonth": 46,
+    "preparationTime": "47 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 14,
+    "price": 38,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Montenegro",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 247,
+      "protein": 21,
+      "carbs": 60,
+      "fat": 47
+    },
+    "totalSaleInThisMonth": 86,
+    "preparationTime": "54 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 11,
+    "price": 45,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Afghanistan",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 172,
+      "protein": 35,
+      "carbs": 89,
+      "fat": 45
+    },
+    "totalSaleInThisMonth": 148,
+    "preparationTime": "33 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Veggie Wrap",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 19,
+    "price": 28,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Cote d'Ivoire",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 185,
+      "protein": 36,
+      "carbs": 96,
+      "fat": 41
+    },
+    "totalSaleInThisMonth": 193,
+    "preparationTime": "45 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 8,
+    "price": 45,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Democratic People's Republic of Korea",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 234,
+      "protein": 18,
+      "carbs": 58,
+      "fat": 16
+    },
+    "totalSaleInThisMonth": 118,
+    "preparationTime": "57 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 12,
+    "price": 31,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Thailand",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 470,
+      "protein": 46,
+      "carbs": 32,
+      "fat": 13
+    },
+    "totalSaleInThisMonth": 178,
+    "preparationTime": "12 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 12,
+    "price": 36,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Nicaragua",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 170,
+      "protein": 9,
+      "carbs": 96,
+      "fat": 10
+    },
+    "totalSaleInThisMonth": 68,
+    "preparationTime": "15 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 13,
+    "price": 36,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "France",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 444,
+      "protein": 36,
+      "carbs": 67,
+      "fat": 34
+    },
+    "totalSaleInThisMonth": 191,
+    "preparationTime": "30 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chocolate Brownie",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 0,
+    "price": 40,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Sao Tome and Principe",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 231,
+      "protein": 26,
+      "carbs": 33,
+      "fat": 28
+    },
+    "totalSaleInThisMonth": 134,
+    "preparationTime": "11 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Sushi Roll",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 2,
+    "price": 47,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Palestine",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 151,
+      "protein": 42,
+      "carbs": 22,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 89,
+    "preparationTime": "22 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 11,
+    "price": 23,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Sri Lanka",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 342,
+      "protein": 37,
+      "carbs": 93,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 91,
+    "preparationTime": "36 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Caesar Salad",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 9,
+    "price": 45,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Afghanistan",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 449,
+      "protein": 45,
+      "carbs": 28,
+      "fat": 32
+    },
+    "totalSaleInThisMonth": 191,
+    "preparationTime": "49 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Vegetable Stir Fry",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 16,
+    "price": 31,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Curacao",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 422,
+      "protein": 12,
+      "carbs": 82,
+      "fat": 12
+    },
+    "totalSaleInThisMonth": 149,
+    "preparationTime": "43 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Chocolate Brownie",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 18,
+    "price": 47,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Iceland",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 302,
+      "protein": 7,
+      "carbs": 12,
+      "fat": 26
+    },
+    "totalSaleInThisMonth": 11,
+    "preparationTime": "52 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chocolate Brownie",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 15,
+    "price": 24,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Marshall Islands",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 497,
+      "protein": 23,
+      "carbs": 56,
+      "fat": 49
+    },
+    "totalSaleInThisMonth": 108,
+    "preparationTime": "57 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Caesar Salad",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 2,
+    "price": 29,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Northern Mariana Islands",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 262,
+      "protein": 28,
+      "carbs": 95,
+      "fat": 20
+    },
+    "totalSaleInThisMonth": 141,
+    "preparationTime": "35 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 10,
+    "price": 16,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Denmark",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 455,
+      "protein": 39,
+      "carbs": 80,
+      "fat": 44
+    },
+    "totalSaleInThisMonth": 198,
+    "preparationTime": "39 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 9,
+    "price": 7,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Turkmenistan",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 273,
+      "protein": 30,
+      "carbs": 55,
+      "fat": 18
+    },
+    "totalSaleInThisMonth": 63,
+    "preparationTime": "26 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 6,
+    "price": 41,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Eritrea",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 466,
+      "protein": 18,
+      "carbs": 15,
+      "fat": 32
+    },
+    "totalSaleInThisMonth": 98,
+    "preparationTime": "16 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 19,
+    "price": 11,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Suriname",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 210,
+      "protein": 10,
+      "carbs": 85,
+      "fat": 9
+    },
+    "totalSaleInThisMonth": 158,
+    "preparationTime": "18 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 0,
+    "price": 14,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Moldova",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 359,
+      "protein": 29,
+      "carbs": 74,
+      "fat": 43
+    },
+    "totalSaleInThisMonth": 91,
+    "preparationTime": "58 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 8,
+    "price": 14,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Belgium",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 445,
+      "protein": 34,
+      "carbs": 99,
+      "fat": 45
+    },
+    "totalSaleInThisMonth": 76,
+    "preparationTime": "59 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Veggie Wrap",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 1,
+    "price": 48,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Lesotho",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 237,
+      "protein": 41,
+      "carbs": 32,
+      "fat": 41
+    },
+    "totalSaleInThisMonth": 60,
+    "preparationTime": "55 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Chicken Biryani",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 14,
+    "price": 35,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Pitcairn Islands",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 222,
+      "protein": 16,
+      "carbs": 73,
+      "fat": 12
+    },
+    "totalSaleInThisMonth": 196,
+    "preparationTime": "22 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Buffalo Wings",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 1,
+    "price": 50,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "South Georgia and the South Sandwich Islands",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 175,
+      "protein": 17,
+      "carbs": 28,
+      "fat": 6
+    },
+    "totalSaleInThisMonth": 32,
+    "preparationTime": "59 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 7,
+    "price": 25,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Cambodia",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 265,
+      "protein": 9,
+      "carbs": 88,
+      "fat": 6
+    },
+    "totalSaleInThisMonth": 160,
+    "preparationTime": "21 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Buffalo Wings",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 1,
+    "price": 17,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Hong Kong",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 232,
+      "protein": 23,
+      "carbs": 44,
+      "fat": 43
+    },
+    "totalSaleInThisMonth": 40,
+    "preparationTime": "23 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 4,
+    "price": 18,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Bosnia and Herzegovina",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 214,
+      "protein": 24,
+      "carbs": 13,
+      "fat": 41
+    },
+    "totalSaleInThisMonth": 155,
+    "preparationTime": "12 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 0,
+    "price": 9,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Nicaragua",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 465,
+      "protein": 21,
+      "carbs": 68,
+      "fat": 8
+    },
+    "totalSaleInThisMonth": 191,
+    "preparationTime": "27 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 9,
+    "price": 15,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Tanzania",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 152,
+      "protein": 26,
+      "carbs": 79,
+      "fat": 9
+    },
+    "totalSaleInThisMonth": 80,
+    "preparationTime": "51 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 17,
+    "price": 48,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Democratic People's Republic of Korea",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 387,
+      "protein": 20,
+      "carbs": 12,
+      "fat": 37
+    },
+    "totalSaleInThisMonth": 145,
+    "preparationTime": "54 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 6,
+    "price": 38,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Benin",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 213,
+      "protein": 5,
+      "carbs": 100,
+      "fat": 25
+    },
+    "totalSaleInThisMonth": 117,
+    "preparationTime": "46 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 10,
+    "price": 18,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "American Samoa",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 305,
+      "protein": 14,
+      "carbs": 87,
+      "fat": 19
+    },
+    "totalSaleInThisMonth": 166,
+    "preparationTime": "17 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 18,
+    "price": 7,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Cayman Islands",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 158,
+      "protein": 29,
+      "carbs": 64,
+      "fat": 12
+    },
+    "totalSaleInThisMonth": 113,
+    "preparationTime": "38 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 17,
+    "price": 18,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Moldova",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 175,
+      "protein": 35,
+      "carbs": 77,
+      "fat": 42
+    },
+    "totalSaleInThisMonth": 197,
+    "preparationTime": "36 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 7,
+    "price": 38,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Paraguay",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 309,
+      "protein": 37,
+      "carbs": 54,
+      "fat": 26
+    },
+    "totalSaleInThisMonth": 179,
+    "preparationTime": "50 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 2,
+    "price": 12,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Sao Tome and Principe",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 354,
+      "protein": 24,
+      "carbs": 70,
+      "fat": 14
+    },
+    "totalSaleInThisMonth": 21,
+    "preparationTime": "25 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Veggie Wrap",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 6,
+    "price": 49,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Micronesia",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 453,
+      "protein": 44,
+      "carbs": 56,
+      "fat": 50
+    },
+    "totalSaleInThisMonth": 115,
+    "preparationTime": "52 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 13,
+    "price": 17,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Norway",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 409,
+      "protein": 18,
+      "carbs": 37,
+      "fat": 41
+    },
+    "totalSaleInThisMonth": 179,
+    "preparationTime": "15 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Caesar Salad",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 4,
+    "price": 43,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Panama",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 235,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 7
+    },
+    "totalSaleInThisMonth": 62,
+    "preparationTime": "36 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Egg Fried Rice",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 17,
+    "price": 20,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Malta",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 173,
+      "protein": 9,
+      "carbs": 86,
+      "fat": 43
+    },
+    "totalSaleInThisMonth": 47,
+    "preparationTime": "11 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 17,
+    "price": 13,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Saint Lucia",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 387,
+      "protein": 44,
+      "carbs": 10,
+      "fat": 47
+    },
+    "totalSaleInThisMonth": 127,
+    "preparationTime": "40 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Vanilla Ice Cream",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 14,
+    "price": 47,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Iran",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 189,
+      "protein": 6,
+      "carbs": 67,
+      "fat": 11
+    },
+    "totalSaleInThisMonth": 35,
+    "preparationTime": "11 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 8,
+    "price": 26,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Thailand",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 457,
+      "protein": 50,
+      "carbs": 64,
+      "fat": 40
+    },
+    "totalSaleInThisMonth": 24,
+    "preparationTime": "33 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 8,
+    "price": 30,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Ethiopia",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 448,
+      "protein": 42,
+      "carbs": 43,
+      "fat": 22
+    },
+    "totalSaleInThisMonth": 155,
+    "preparationTime": "18 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Spaghetti Carbonara",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 12,
+    "price": 5,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Israel",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 422,
+      "protein": 11,
+      "carbs": 67,
+      "fat": 42
+    },
+    "totalSaleInThisMonth": 13,
+    "preparationTime": "11 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Chocolate Brownie",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 1,
+    "price": 47,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Northern Mariana Islands",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 453,
+      "protein": 11,
+      "carbs": 69,
+      "fat": 40
+    },
+    "totalSaleInThisMonth": 113,
+    "preparationTime": "21 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 5,
+    "price": 7,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Oman",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 367,
+      "protein": 27,
+      "carbs": 32,
+      "fat": 39
+    },
+    "totalSaleInThisMonth": 152,
+    "preparationTime": "53 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 0,
+    "price": 19,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Moldova",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 268,
+      "protein": 26,
+      "carbs": 67,
+      "fat": 37
+    },
+    "totalSaleInThisMonth": 175,
+    "preparationTime": "22 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 14,
+    "price": 9,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "American Samoa",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 371,
+      "protein": 7,
+      "carbs": 52,
+      "fat": 38
+    },
+    "totalSaleInThisMonth": 34,
+    "preparationTime": "35 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 10,
+    "price": 33,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Spain",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 428,
+      "protein": 41,
+      "carbs": 37,
+      "fat": 7
+    },
+    "totalSaleInThisMonth": 107,
+    "preparationTime": "56 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 16,
+    "price": 36,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Svalbard & Jan Mayen Islands",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 457,
+      "protein": 6,
+      "carbs": 50,
+      "fat": 17
+    },
+    "totalSaleInThisMonth": 80,
+    "preparationTime": "33 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 20,
+    "price": 40,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Anguilla",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 228,
+      "protein": 26,
+      "carbs": 16,
+      "fat": 7
+    },
+    "totalSaleInThisMonth": 176,
+    "preparationTime": "35 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 17,
+    "price": 11,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Sri Lanka",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 393,
+      "protein": 31,
+      "carbs": 11,
+      "fat": 32
+    },
+    "totalSaleInThisMonth": 18,
+    "preparationTime": "58 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 8,
+    "price": 10,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "French Polynesia",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 171,
+      "protein": 31,
+      "carbs": 49,
+      "fat": 34
+    },
+    "totalSaleInThisMonth": 15,
+    "preparationTime": "14 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 0,
+    "price": 6,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Austria",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 256,
+      "protein": 37,
+      "carbs": 51,
+      "fat": 31
+    },
+    "totalSaleInThisMonth": 200,
+    "preparationTime": "58 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Crispy Spring Rolls",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 3,
+    "price": 40,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Aruba",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 366,
+      "protein": 5,
+      "carbs": 71,
+      "fat": 48
+    },
+    "totalSaleInThisMonth": 41,
+    "preparationTime": "31 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Chicken Biryani",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 19,
+    "price": 16,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Reunion",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 162,
+      "protein": 47,
+      "carbs": 44,
+      "fat": 11
+    },
+    "totalSaleInThisMonth": 31,
+    "preparationTime": "48 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Egg Fried Rice",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 13,
+    "price": 33,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Djibouti",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 426,
+      "protein": 19,
+      "carbs": 96,
+      "fat": 12
+    },
+    "totalSaleInThisMonth": 63,
+    "preparationTime": "46 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 14,
+    "price": 29,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "United Kingdom",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 162,
+      "protein": 44,
+      "carbs": 46,
+      "fat": 8
+    },
+    "totalSaleInThisMonth": 127,
+    "preparationTime": "16 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 10,
+    "price": 50,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Equatorial Guinea",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 480,
+      "protein": 20,
+      "carbs": 13,
+      "fat": 38
+    },
+    "totalSaleInThisMonth": 57,
+    "preparationTime": "15 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Sushi Roll",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 15,
+    "price": 45,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Falkland Islands (Malvinas)",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 360,
+      "protein": 10,
+      "carbs": 38,
+      "fat": 10
+    },
+    "totalSaleInThisMonth": 120,
+    "preparationTime": "11 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 11,
+    "price": 12,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Mali",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 204,
+      "protein": 30,
+      "carbs": 28,
+      "fat": 11
+    },
+    "totalSaleInThisMonth": 54,
+    "preparationTime": "56 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Alfredo",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 13,
+    "price": 20,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Brazil",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 474,
+      "protein": 27,
+      "carbs": 95,
+      "fat": 6
+    },
+    "totalSaleInThisMonth": 14,
+    "preparationTime": "19 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 4,
+    "price": 39,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Cote d'Ivoire",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 281,
+      "protein": 23,
+      "carbs": 53,
+      "fat": 14
+    },
+    "totalSaleInThisMonth": 80,
+    "preparationTime": "35 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 0,
+    "price": 17,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Sweden",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 238,
+      "protein": 40,
+      "carbs": 13,
+      "fat": 45
+    },
+    "totalSaleInThisMonth": 185,
+    "preparationTime": "38 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 7,
+    "price": 30,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Trinidad and Tobago",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 159,
+      "protein": 47,
+      "carbs": 55,
+      "fat": 24
+    },
+    "totalSaleInThisMonth": 154,
+    "preparationTime": "44 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 20,
+    "price": 13,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "North Macedonia",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 436,
+      "protein": 5,
+      "carbs": 93,
+      "fat": 35
+    },
+    "totalSaleInThisMonth": 198,
+    "preparationTime": "52 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 5,
+    "price": 48,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Greenland",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 344,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 8
+    },
+    "totalSaleInThisMonth": 160,
+    "preparationTime": "56 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Tomato Soup",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 5,
+    "price": 11,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Faroe Islands",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 236,
+      "protein": 48,
+      "carbs": 18,
+      "fat": 8
+    },
+    "totalSaleInThisMonth": 45,
+    "preparationTime": "45 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Cheeseburger",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 6,
+    "price": 35,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Israel",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 183,
+      "protein": 20,
+      "carbs": 20,
+      "fat": 13
+    },
+    "totalSaleInThisMonth": 160,
+    "preparationTime": "49 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Caesar Salad",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Dessert",
+    "quantity": 0,
+    "price": 26,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Yemen",
+    "description": "Sweet and delightful dessert to end your meal on a high note.",
+    "ingredients": [
+      "Chocolate",
+      "Cream",
+      "Sugar",
+      "Vanilla"
+    ],
+    "makingProcedure": "Mix ingredients, bake or refrigerate, and serve chilled.",
+    "nutritionFacts": {
+      "calories": 293,
+      "protein": 15,
+      "carbs": 89,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 28,
+    "preparationTime": "56 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chocolate Brownie",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 19,
+    "price": 38,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Isle of Man",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 453,
+      "protein": 9,
+      "carbs": 41,
+      "fat": 33
+    },
+    "totalSaleInThisMonth": 143,
+    "preparationTime": "33 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Spaghetti Carbonara",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 12,
+    "price": 30,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Costa Rica",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 365,
+      "protein": 30,
+      "carbs": 49,
+      "fat": 24
+    },
+    "totalSaleInThisMonth": 108,
+    "preparationTime": "57 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "French Fries",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 6,
+    "price": 13,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Lesotho",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 497,
+      "protein": 41,
+      "carbs": 23,
+      "fat": 35
+    },
+    "totalSaleInThisMonth": 97,
+    "preparationTime": "51 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Grilled Cheese Sandwich",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 9,
+    "price": 26,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Seychelles",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 428,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 10
+    },
+    "totalSaleInThisMonth": 75,
+    "preparationTime": "10 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Caesar Salad",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 1,
+    "price": 7,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Puerto Rico",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 498,
+      "protein": 37,
+      "carbs": 40,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 56,
+    "preparationTime": "23 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Vanilla Ice Cream",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 2,
+    "price": 40,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Vanuatu",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 403,
+      "protein": 49,
+      "carbs": 50,
+      "fat": 30
+    },
+    "totalSaleInThisMonth": 60,
+    "preparationTime": "57 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Chicken Biryani",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 12,
+    "price": 27,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "New Caledonia",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 416,
+      "protein": 19,
+      "carbs": 61,
+      "fat": 26
+    },
+    "totalSaleInThisMonth": 77,
+    "preparationTime": "50 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Pancakes",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 11,
+    "price": 24,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "France",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 436,
+      "protein": 44,
+      "carbs": 68,
+      "fat": 29
+    },
+    "totalSaleInThisMonth": 46,
+    "preparationTime": "12 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Tacos",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Main Course",
+    "quantity": 9,
+    "price": 17,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Saint Helena",
+    "description": "A satisfying main course featuring a protein-rich and well-balanced meal.",
+    "ingredients": [
+      "Chicken",
+      "Rice",
+      "Spices",
+      "Vegetables"
+    ],
+    "makingProcedure": "Cook chicken with spices. Serve with rice and fresh vegetables.",
+    "nutritionFacts": {
+      "calories": 346,
+      "protein": 19,
+      "carbs": 99,
+      "fat": 20
+    },
+    "totalSaleInThisMonth": 22,
+    "preparationTime": "28 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Egg Fried Rice",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Soup",
+    "quantity": 15,
+    "price": 9,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Japan",
+    "description": "Warm and comforting soup made with fresh ingredients.",
+    "ingredients": [
+      "Carrots",
+      "Onions",
+      "Celery",
+      "Chicken broth"
+    ],
+    "makingProcedure": "Simmer all ingredients together until cooked. Serve hot.",
+    "nutritionFacts": {
+      "calories": 434,
+      "protein": 27,
+      "carbs": 85,
+      "fat": 14
+    },
+    "totalSaleInThisMonth": 19,
+    "preparationTime": "39 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Margherita Pizza",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pizza",
+    "quantity": 18,
+    "price": 13,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud50@gmail.com"
+    },
+    "foodOrigin": "Canada",
+    "description": "Cheesy and flavorful pizza topped with fresh ingredients.",
+    "ingredients": [
+      "Pizza base",
+      "Cheese",
+      "Tomato sauce",
+      "Toppings"
+    ],
+    "makingProcedure": "Spread sauce on the base, add toppings, bake, and serve.",
+    "nutritionFacts": {
+      "calories": 419,
+      "protein": 27,
+      "carbs": 53,
+      "fat": 32
+    },
+    "totalSaleInThisMonth": 111,
+    "preparationTime": "15 minutes",
+    "isVegetarian": true
+  },
+  {
+    "foodName": "Vegetable Stir Fry",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Beverage",
+    "quantity": 14,
+    "price": 42,
+    "addedBy": {
+      "name": "Shakir",
+      "email": "shakir@gmail.com"
+    },
+    "foodOrigin": "Bouvet Island",
+    "description": "Refreshing beverage to quench your thirst.",
+    "ingredients": [
+      "Water",
+      "Lemon",
+      "Mint",
+      "Sugar"
+    ],
+    "makingProcedure": "Mix all ingredients in a pitcher. Serve cold.",
+    "nutritionFacts": {
+      "calories": 472,
+      "protein": 30,
+      "carbs": 15,
+      "fat": 37
+    },
+    "totalSaleInThisMonth": 125,
+    "preparationTime": "17 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Buffalo Wings",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Pasta",
+    "quantity": 18,
+    "price": 5,
+    "addedBy": {
+      "name": "Shakir Mahmud",
+      "email": "shakirmahmud44@gmail.com"
+    },
+    "foodOrigin": "Mali",
+    "description": "Classic pasta dish with a rich and creamy sauce.",
+    "ingredients": [
+      "Pasta",
+      "Cream",
+      "Cheese",
+      "Garlic"
+    ],
+    "makingProcedure": "Cook pasta. Toss with sauce and serve hot.",
+    "nutritionFacts": {
+      "calories": 373,
+      "protein": 17,
+      "carbs": 79,
+      "fat": 13
+    },
+    "totalSaleInThisMonth": 149,
+    "preparationTime": "52 minutes",
+    "isVegetarian": false
+  },
+  {
+    "foodName": "Margarita Cocktail",
+    "foodImage": "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    "foodCategory": "Salad",
+    "quantity": 0,
+    "price": 34,
+    "addedBy": {
+      "name": "Rasel",
+      "email": "rasel@gmail.com"
+    },
+    "foodOrigin": "Tajikistan",
+    "description": "Fresh and healthy salad with a mix of vegetables and delicious dressing.",
+    "ingredients": [
+      "Lettuce",
+      "Cucumber",
+      "Tomatoes",
+      "Olive oil"
+    ],
+    "makingProcedure": "Chop all vegetables. Mix with dressing and serve fresh.",
+    "nutritionFacts": {
+      "calories": 179,
+      "protein": 44,
+      "carbs": 88,
+      "fat": 49
+    },
+    "totalSaleInThisMonth": 60,
+    "preparationTime": "17 minutes",
+    "isVegetarian": false
+  }
+]
