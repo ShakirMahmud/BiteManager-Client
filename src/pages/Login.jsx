@@ -1,17 +1,73 @@
 import React, { useState } from 'react';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useAuth from '../hooks/useAuth';
+import Swal from 'sweetalert2';
 
 const Login = () => {
     const [isClicked, setIsClicked] = useState(true);
+    const { loginUser, setUser, signInWithGoogle } = useAuth();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleSignIn = (e) => {
         e.preventDefault();
-    }
+        const form = e.target;
+        const email = form.email.value;
+        const password = form.password.value;
+        loginUser(email, password)
+            .then((result) => {
+                setUser(result.user);
+                Swal.fire({
+                    title: "Sign-In Successful!",
+                    text: "You have successfully signed in. You will be redirected shortly, or click OK to proceed immediately.",
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    timer: 3000,
+                    timerProgressBar: true,
+                })
+                    .then((result) => {
+                        if (result.isConfirmed || result.dismiss === Swal.DismissReason.timer) {
+                            navigate(location?.state ? location?.state : '/');
+                        }
+                    })
+            })
+            .catch(() => {
+                Swal.fire({
+                    title: "Sign-In Failed!",
+                    text: 'Wrong email or password',
+                    icon: "error",
+                    confirmButtonText: "Try Again",
+                })
+            })
+    };
 
     const handleSignInWithGoogle = () => {
-
+        signInWithGoogle()
+            .then((result) => {
+                setUser(result.user);
+                Swal.fire({
+                    title: "Sign-In with Google Successful!",
+                    text: "You have successfully signed in using Google. You will be redirected shortly, or click OK to proceed immediately.",
+                    icon: "success",
+                    confirmButtonText: "OK",
+                    timer: 3000,
+                    timerProgressBar: true,
+                }).then((result) => {
+                    if (result.isConfirmed || result.dismiss === Swal.DismissReason.timer) {
+                        navigate(location?.state ? location?.state : '/');
+                    }
+                })
+            })
+            .catch((error) => {
+                Swal.fire({
+                    title: "Sign-In Failed!",
+                    text: 'An error occurred while signing in with Google',
+                    icon: "error",
+                    confirmButtonText: "Try Again",
+                })
+            })
     }
 
     return (

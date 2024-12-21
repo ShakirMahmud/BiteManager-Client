@@ -4,6 +4,10 @@ import ErrorPage from './../pages/ErrorPage';
 import HomeLayout from "../layout/HomeLayout";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import AllFoods from "../pages/AllFoods";
+import Gallery from "../pages/Gallery";
+import PrivateRoute from "./PrivateRoute";
+import AddFood from './../pages/AddFood';
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -14,9 +18,18 @@ export const router = createBrowserRouter([
                 path: "/",
                 element: <Home/>
             },
-            {},
-            {},
-            {},
+            {
+                path: '/allFoods',
+                element: <AllFoods/>
+            },
+            {
+                path: '/gallery',
+                element: <Gallery/>
+            },
+            {
+                path: '/addFood',
+                element: <PrivateRoute><AddFood/></PrivateRoute>
+            },
             {},
             {},
             {},

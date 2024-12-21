@@ -5,8 +5,11 @@ import useAuth from '../hooks/useAuth';
 const Navbar = () => {
     const {user, logOut} = useAuth();
 
-    const links = <div>
+    const links = <div className='flex gap-4'>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/allFoods'>All Foods</NavLink></li>
+        <li><NavLink to='/gallery'>Gallery</NavLink></li>
+        <li><NavLink to='/addFood'>Add Food</NavLink></li>
     </div>
 
     return (
