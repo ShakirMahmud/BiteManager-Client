@@ -1,10 +1,30 @@
 import { useState } from "react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Register = () => {
     const [isClicked, setIsClicked] = useState(true);
+    const [error, setError] = useState('');
+    const { createUser, signInWithGoogle, updateUserProfile, setUser } = useAuth();
+    const navigate = useNavigate(); 
+
+    const sweetAlert = () => {
+        Swal.fire({
+            title: "Sign-Up Successful!",
+            text: "You have successfully signed up. You will be redirected shortly, or click OK to proceed immediately.",
+            icon: "success",
+            confirmButtonText: "OK",
+            timer: 3000,
+            timerProgressBar: true,
+        }).then((result) => {
+            if (result.isConfirmed || result.dismiss === Swal.DismissReason.timer) {
+                navigate("/");
+            }
+        });
+    };
 
     const handleSignUp = (e) => {
         e.preventDefault();
@@ -13,10 +33,52 @@ const Register = () => {
         const photo = form.photo.value;
         const email = form.email.value;
         const password = form.password.value;
-        const user = { name, photo, email, password };
-    }
+        // validate user with one uppercase, one lowercase, and 6 characters
+        const hasUppercase = /[A-Z]/.test(password);
+        const hasLowercase = /[a-z]/.test(password);
+        const isValidLength = password.length >= 6;
+
+        if (!hasUppercase) {
+            setError("Password must contain at least one uppercase letter.");
+            return;
+        }
+        if (!hasLowercase) {
+            setError("Password must contain at least one lowercase letter.");
+            return;
+        }
+        if (!isValidLength) {
+            setError("Password must be at least 6 characters long.");
+            return;
+        }
+        const user = { name, photo, email };
+
+        createUser(email, password)
+            .then((result) => {
+                setUser(result.user);
+                setError('');
+                updateUserProfile({ displayName: name, photoURL: photo })
+                    .then(() => {
+                        sweetAlert();
+                    })
+                    .catch((error) => {
+                        setError(error.message);
+                    });
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
+    };
+
 
     const handleSignUpWithGoogle = () => {
+        signInWithGoogle()
+            .then((result) => {
+                setUser(result.user);
+                sweetAlert();
+            })
+            .catch((error) => {
+                setError(error.message);
+            });
 
     }
 
@@ -52,6 +114,7 @@ const Register = () => {
                             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                         </label>
                     </div>
+                    {error && <p className="text-red-500">{error}</p>}
                     <div className="form-control mt-6">
                         <button type='submit' className="btn btn-primary bg-btn_bg rounded-xl text-white">Sign Up</button>
                     </div>
