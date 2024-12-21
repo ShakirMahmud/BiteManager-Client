@@ -4,12 +4,14 @@ import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import Swal from "sweetalert2";
+import useAxiosSecure from "../hooks/useAxiosSecure";
 
 const Register = () => {
     const [isClicked, setIsClicked] = useState(true);
     const [error, setError] = useState('');
     const { createUser, signInWithGoogle, updateUserProfile, setUser } = useAuth();
     const navigate = useNavigate(); 
+    const axiosSecure = useAxiosSecure();
 
     const sweetAlert = () => {
         Swal.fire({
@@ -26,19 +28,12 @@ const Register = () => {
         });
     };
     const postToDB = (newUser) => {
-        fetch("http://localhost:5000/users", {
-            method: "POST",
-            headers: {
-                "content-type": "application/json",
-            },
-            body: JSON.stringify(newUser),
-        })
-            .then((res) => res.json())
-            .then((data) => {
-                if (data.insertedId) {
-                    console.log("User created successfully at db");
+        axiosSecure.post('/users', newUser)
+            .then(data => {
+                if (data.data.insertedId) {
+                    sweetAlert();
                 }
-            });
+            })
     };
 
     const handleSignUp = (e) => {
@@ -75,7 +70,7 @@ const Register = () => {
                 postToDB(user);
                 updateUserProfile({ displayName: name, photoURL: photo })
                     .then(() => {
-                        sweetAlert();
+                        // sweetAlert();
                     })
                     .catch((error) => {
                         setError(error.message);
