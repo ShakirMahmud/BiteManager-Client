@@ -9,8 +9,9 @@ import Gallery from "../pages/Gallery";
 import PrivateRoute from "./PrivateRoute";
 import AddFood from './../pages/AddFood';
 import SingleFood from './../pages/SingleFood';
-import { param } from "motion/react-client";
-import axiosPublic from "../hooks/axiosPublic";
+import FoodPurchase from './../pages/FoodPurchase';
+
+
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -36,9 +37,11 @@ export const router = createBrowserRouter([
             {
                 path: '/food/:id',
                 element: <SingleFood/>,
-                loader:  ({params}) => axiosPublic.get(`/food/${params.id}`)
             },
-            {},
+            {
+                path: '/checkout/:id',
+                element: <PrivateRoute><FoodPurchase/></PrivateRoute>,
+            },
             {},
             {},
             {},

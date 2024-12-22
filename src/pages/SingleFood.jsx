@@ -20,12 +20,6 @@ const SingleFood = () => {
 
     if (isLoading) {
         return <Loading/>;
-    }
-
-    // Function to handle Purchase button click
-    const handlePurchase = () => {
-        // Navigate to the purchase page (you should have a purchase page setup)
-        navigate(`/purchase/${food._id}`);
     };
 
     return (
@@ -95,6 +89,11 @@ const SingleFood = () => {
                                 <h3 className="font-semibold text-lg text-gray-800">Vegetarian</h3>
                                 <p className="text-gray-600">{food.isVegetarian ? 'Yes' : 'No'}</p>
                             </div>
+                            {/* added by */}
+                            <div>
+                                <h3 className="font-semibold text-lg text-gray-800">Added By</h3>
+                                <p className="text-gray-600">{food.addedBy.email}</p>
+                            </div>
 
                             {/* Purchase Info */}
                             <div className="flex items-center justify-between mt-6">
@@ -105,7 +104,7 @@ const SingleFood = () => {
 
                                 {/* Purchase Button */}
                                 <button
-                                    onClick={handlePurchase}
+                                    onClick={() => navigate(`/checkout/${food._id}`)}
                                     className="px-6 py-2 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition-all"
                                 >
                                     Purchase
