@@ -10,6 +10,7 @@ import PrivateRoute from "./PrivateRoute";
 import AddFood from './../pages/AddFood';
 import SingleFood from './../pages/SingleFood';
 import FoodPurchase from './../pages/FoodPurchase';
+import MyFoods from './../pages/MyFoods';
 
 
 export const router = createBrowserRouter([
@@ -42,7 +43,10 @@ export const router = createBrowserRouter([
                 path: '/checkout/:id',
                 element: <PrivateRoute><FoodPurchase/></PrivateRoute>,
             },
-            {},
+            {
+                path: '/myFoods',
+                element: <PrivateRoute><MyFoods/></PrivateRoute>,
+            },
             {},
             {},
             {
