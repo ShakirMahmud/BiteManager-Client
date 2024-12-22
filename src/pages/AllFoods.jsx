@@ -3,12 +3,14 @@ import React, { useState, useEffect } from 'react';
 import axiosPublic from '../hooks/axiosPublic';
 import Loading from '../pages/Loading';
 import { FiSearch } from 'react-icons/fi';
+import { useNavigate } from 'react-router-dom';
 
 
 const AllFoods = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [foods, setFoods] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
+    const navigate = useNavigate();
 
     const subtitle = { text: 'Discover the Best Foods!', color: 'text-green-300' };
 
@@ -95,7 +97,7 @@ const AllFoods = () => {
                                     <button
                                         className="mt-4 w-full px-4 py-2 bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all"
                                         onClick={() => {
-                                            console.log(`Navigate to details of ${food.foodName}`);
+                                            navigate(`/food/${food._id}`);
                                         }}
                                     >
                                         View Details

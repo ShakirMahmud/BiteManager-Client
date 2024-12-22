@@ -8,6 +8,9 @@ import AllFoods from "../pages/AllFoods";
 import Gallery from "../pages/Gallery";
 import PrivateRoute from "./PrivateRoute";
 import AddFood from './../pages/AddFood';
+import SingleFood from './../pages/SingleFood';
+import { param } from "motion/react-client";
+import axiosPublic from "../hooks/axiosPublic";
 export const router = createBrowserRouter([
     {
         path: "/",
@@ -30,7 +33,11 @@ export const router = createBrowserRouter([
                 path: '/addFood',
                 element: <PrivateRoute><AddFood/></PrivateRoute>
             },
-            {},
+            {
+                path: '/food/:id',
+                element: <SingleFood/>,
+                loader:  ({params}) => axiosPublic.get(`/food/${params.id}`)
+            },
             {},
             {},
             {},

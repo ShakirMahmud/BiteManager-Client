@@ -81,7 +81,8 @@ for (let i = 0; i < 100; i++) {
       carbs: faker.number.int({ min: 10, max: 100 }),
       fat: faker.number.int({ min: 5, max: 50 }),
     },
-    totalSaleInThisMonth: faker.number.int({ min: 10, max: 200 }),
+    popularity: faker.number.int({ min: 10, max: 200 }),
+    purchaseCount: faker.number.int({ min: 0, max: 0}),
     preparationTime: `${faker.number.int({ min: 10, max: 60 })} minutes`,
     isVegetarian: faker.datatype.boolean(),
   });
