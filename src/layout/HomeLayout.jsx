@@ -14,7 +14,7 @@ const HomeLayout = () => {
             <main>
                 <Outlet/>
             </main>
-            <footer>
+            <footer className='bg-light-background/80 dark:bg-dark-background/80'>
                 <Footer/>
             </footer>
             
