@@ -11,7 +11,7 @@ const Navbar = () => {
     const { isDarkMode, toggleTheme } = useContext(ThemeContext);
     const dropdownRef = useRef(null);
     const location = useLocation();
-    
+
     // Close dropdown when clicking outside
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -19,7 +19,7 @@ const Navbar = () => {
                 dropdownRef.current.querySelector('ul')?.removeAttribute('data-visible');
             }
         };
-        
+
         document.addEventListener('mousedown', handleClickOutside);
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
@@ -33,10 +33,9 @@ const Navbar = () => {
         <NavLink
             to={to}
             className={({ isActive }) =>
-                `px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-card dark:hover:bg-dark-card ${
-                    isActive
-                        ? 'text-light-primary dark:text-dark-primary font-semibold'
-                        : 'text-light-text-secondary dark:text-dark-text-secondary'
+                `px-4 py-2 rounded-lg transition-colors duration-200 hover:bg-light-card dark:hover:bg-dark-card ${isActive
+                    ? 'text-light-primary dark:text-dark-primary font-semibold'
+                    : 'text-light-text-secondary dark:text-dark-text-secondary'
                 }`
             }
         >
@@ -49,10 +48,9 @@ const Navbar = () => {
             <NavLink
                 to={to}
                 className={({ isActive }) =>
-                    `block px-4 py-2 w-full ${
-                        isActive
-                            ? 'text-light-primary dark:text-dark-primary font-semibold'
-                            : 'text-light-text-secondary dark:text-dark-text-secondary'
+                    `block px-4 py-2 w-full ${isActive
+                        ? 'text-light-primary dark:text-dark-primary font-semibold'
+                        : 'text-light-text-secondary dark:text-dark-text-secondary'
                     }`
                 }
             >
@@ -111,7 +109,7 @@ const Navbar = () => {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* Logo */}
                             <Link to="/" className="flex items-center gap-1 ml-2 lg:ml-0">
                                 <span className="text-2xl font-bold">
@@ -143,30 +141,32 @@ const Navbar = () => {
 
                             {user?.email ? (
                                 <div className="flex items-center gap-2">
-                                    <div className="dropdown dropdown-end flex items-center" ref={dropdownRef}>
+                                    <div className="dropdown dropdown-end flex items-center relative" ref={dropdownRef}>
                                         <label
                                             tabIndex={0}
-                                            className="  rounded-xl  cursor-pointer"
+                                            className="cursor-pointer"
                                             onClick={toggleDropdown}
                                         >
-                                            <div className="flex items-center p-1 rounded-xl border border-card dark:border-dark-card  gap-2">
+                                            <div className="flex items-center p-1 rounded-xl border border-card dark:border-dark-card gap-2">
                                                 <img
                                                     src={user?.photoURL}
                                                     alt="User"
-                                                    className="w-8 h-8 rounded-full  object-cover"
+                                                    className="w-8 h-8 rounded-full object-cover"
                                                 />
                                                 <RiArrowDropDownLine className="text-2xl text-light-text-primary dark:text-dark-text-primary hidden lg:block" />
                                             </div>
                                         </label>
                                         <ul
                                             tabIndex={0}
-                                            className="dropdown-content mt-2 w-64 rounded-xl bg-light-background dark:bg-dark-background shadow-lg ring-1 ring-light-card dark:ring-dark-card p-2"
+                                            className="dropdown-content absolute top-full mt-2 right-0 w-64 rounded-xl bg-light-background dark:bg-dark-background shadow-lg ring-1 ring-light-card dark:ring-dark-card p-2 z-50"
+                                            data-visible="false"
                                         >
-                                            <DropdownItem to='/myFoods'>My Foods</DropdownItem>
-                                            <DropdownItem to='/addFood'>Add Food</DropdownItem>
-                                            <DropdownItem to='/myOrders'>My Orders</DropdownItem>
+                                            <DropdownItem to="/myFoods">My Foods</DropdownItem>
+                                            <DropdownItem to="/addFood">Add Food</DropdownItem>
+                                            <DropdownItem to="/myOrders">My Orders</DropdownItem>
                                         </ul>
                                     </div>
+
                                     <button
                                         onClick={logOut}
                                         className="px-4 py-2 rounded-lg bg-error text-white hover:bg-error/90 transition-colors"

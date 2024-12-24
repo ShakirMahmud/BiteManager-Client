@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axiosPublic from "../hooks/axiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../pages/Loading";
+import { useEffect } from "react";
 
 const fetchFoodById = async (id) => {
     const response = await axiosPublic.get(`/food/${id}`);
@@ -21,6 +22,9 @@ const SingleFood = () => {
     if (isLoading) {
         return <Loading/>;
     };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="bg-gray-50 min-h-screen">
