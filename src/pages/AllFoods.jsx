@@ -41,7 +41,7 @@ const AllFoods = () => {
         };
 
         fetchFoods();
-    }, [searchQuery, currentPage]); // Added currentPage here
+    }, [searchQuery, currentPage]); 
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
