@@ -134,7 +134,7 @@ const MyFoods = () => {
                                         type="number"
                                         name="price"
                                         defaultValue={selectedFood.price}
-                                        className="w-full p-2 border border-gray-300 rounded"
+                                        className="w-full p-2 border border-gray-300 rounded "
                                         required
                                     />
                                 </div>

@@ -6,7 +6,6 @@ import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 import Swal from 'sweetalert2'; 
 
-
 const fetchFoodById = async (id, axiosSecure) => {
     const response = await axiosSecure.get(`/food/${id}`);
     return response.data;
@@ -76,75 +75,75 @@ const FoodPurchase = () => {
     }
 
     if (isError) {
-        return <div>Error: {error.message}</div>; 
+        return <div className="text-red-500">Error: {error.message}</div>; 
     }
 
     if (!food) {
-        return <div>No food data found!</div>; 
+        return <div className="text-red-500">No food data found!</div>; 
     }
 
-    // Disabling purchase if food is out of stock or if user tries to buy their own food
     const isOwnFood = food.addedBy.email === user.email;
     const isOutOfStock = food.quantity === 0;
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Left Section: Food Details */}
-            <div>
-                <img src={food.foodImage} alt={food.foodName} className="w-full h-64 object-cover rounded-lg" />
-                <h2 className="text-2xl mt-4">{food.foodName}</h2>
-                <p className="text-lg">{food.foodCategory}</p>
-                <p className="text-lg">Price: ${food.price}</p>
-                <p className="text-lg">Quantity Available: {food.quantity}</p>
-                <p className="text-md mt-2">{food.description}</p>
-            </div>
-
-            {/* Right Section: Purchase Form */}
-            <div className="p-6 bg-white rounded-lg shadow-lg">
-                <h3 className="text-2xl font-bold mb-4">Purchase Food</h3>
-
-                <div className="mb-4">
-                    <p>Buyer Name: <span className="font-semibold">{user.displayName}</span></p>
-                    <p>Buyer Email: <span className="font-semibold">{user.email}</span></p>
+        <div className="bg-light-background dark:bg-dark-background  py-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-4/5 mx-auto bg-light-card dark:bg-dark-card p-6 rounded-lg shadow-lg">
+                {/* Left Section: Food Details */}
+                <div>
+                    <img src={food.foodImage} alt={food.foodName} className="w-full lg:h-96 object-contain rounded-lg" />
+                    <h2 className="text-2xl mt-4 text-light-text-primary dark:text-dark-text-primary">{food.foodName}</h2>
+                    <p className="text-lg text-light-text-secondary dark:text-dark-text-secondary">{food.foodCategory}</p>
+                    <p className="text-lg text-light-text-secondary dark:text-dark-text-secondary">Price: ${food.price}</p>
+                    <p className="text-lg text-light-text-secondary dark:text-dark-text-secondary">Quantity Available: {food.quantity}</p>
+                    <p className="text-md mt-2 text-light-text-muted dark:text-dark-text-muted">{food.description}</p>
                 </div>
 
-                <div className="flex items-center gap-4 mb-4">
-                    <button
-                        onClick={() => handleQuantityChange('decrement')}
-                        className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg"
-                        disabled={quantityToBuy === 1}
-                    >
-                        -
-                    </button>
-                    <input
-                        type="number"
-                        value={quantityToBuy}
-                        readOnly
-                        className="text-center w-16 border border-gray-300 rounded-lg"
-                    />
-                    <button
-                        onClick={() => handleQuantityChange('increment')}
-                        className="px-4 py-2 bg-gray-300 text-gray-700 rounded-lg"
-                        disabled={quantityToBuy === food.quantity}
-                    >
-                        +
-                    </button>
-                </div>
+                {/* Right Section: Purchase Form */}
+                <div className="p-6 bg-white dark:bg-dark-card rounded-lg shadow-lg">
+                    <h3 className="text-2xl font-bold mb-4 text-light-text-primary dark:text-dark-text-primary">Purchase Food</h3>
 
-                {/* Purchase Button */}
-                <button
-                    onClick={handlePurchase}
-                    className="w-full py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-300"
-                    disabled={isOutOfStock || isOwnFood || quantityToBuy <= 0}
-                >
-                    {isOutOfStock ? 'Out of Stock' : 'Purchase'}
-                </button>
-                {isOwnFood && (
-                    <p className="text-red-500 mt-2">You cannot purchase your own food item.</p>
-                )}
-                {isOutOfStock && (
-                    <p className="text-red-500 mt-2">This item is out of stock.</p>
-                )}
+                    <div className="mb-4">
+                        <p className="text-light-text-secondary dark:text-dark-text-secondary">Buyer Name: <span className="font-semibold">{user.displayName}</span></p>
+                        <p className="text-light-text-secondary dark:text-dark-text-secondary">Buyer Email: <span className="font-semibold">{user.email}</span></p>
+                    </div>
+
+                    <div className="flex items-center gap-4 mb-4">
+                        <button
+                            onClick={() => handleQuantityChange('decrement')}
+                            className="px-4 py-2 bg-light-secondary dark:bg-dark-secondary text-white rounded-lg"
+                            disabled={quantityToBuy === 1}
+                        >
+                            -
+                        </button>
+                        <input
+                            type="number"
+                            value={quantityToBuy}
+                            readOnly
+                            className="text-center w-16 border border-light-text-muted dark:border-dark-text-muted rounded-lg"
+                        />
+                        <button
+                            onClick={() => handleQuantityChange('increment')}
+                            className="px-4 py-2 bg-light-secondary dark:bg-dark-secondary text-white rounded-lg"
+                            disabled={quantityToBuy === food.quantity}
+                        >
+                            +
+                        </button>
+                    </div>
+
+                    <button
+                        onClick={handlePurchase}
+                        className="w-full py-2 bg-light-primary dark:bg-dark-primary text-white rounded-lg hover:bg-light-accent dark:hover:bg-dark-accent disabled:bg-gray-300"
+                        disabled={isOutOfStock || isOwnFood || quantityToBuy <= 0}
+                    >
+                        {isOutOfStock ? 'Out of Stock' : 'Purchase'}
+                    </button>
+                    {isOwnFood && (
+                        <p className="text-red-500 mt-2">You cannot purchase your own food item.</p>
+                    )}
+                    {isOutOfStock && (
+                        <p className="text-red-500 mt-2">This item is out of stock.</p>
+                    )}
+                </div>
             </div>
         </div>
     );
