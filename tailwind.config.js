@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        btn_color: '#FF6B35',
         // Light mode colors
         light: {
           primary: '#FF6B35',     // Warm orange - for primary buttons and CTAs

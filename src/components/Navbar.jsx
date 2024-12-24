@@ -116,9 +116,9 @@ const Navbar = () => {
                             <Link to="/" className="flex items-center gap-1 ml-2 lg:ml-0">
                                 <span className="text-2xl font-bold">
                                     <span className="border-b-4 border-light-primary dark:border-dark-primary">
-                                        <span className="italic text-light-text-primary dark:text-dark-text-primary">Equi</span>
+                                        <span className="italic text-light-text-primary dark:text-dark-text-primary">Bite</span>
                                     </span>
-                                    <span className="font-semibold text-light-text-muted dark:text-dark-text-muted italic">Sports</span>
+                                    <span className="font-semibold text-light-text-muted dark:text-dark-text-muted italic">Manager</span>
                                 </span>
                             </Link>
                         </div>

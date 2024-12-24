@@ -6,3 +6,33 @@
 body{
     font-family: "Roboto Slab", serif;
 }
+
+.custom-swiper .swiper-pagination-bullet {
+    background-color: #FF6B35; /* Default bullet color */
+    opacity: 0.6;
+  }
+  
+  .custom-swiper .swiper-pagination-bullet-active {
+    background-color: #FF6B35; /* Active bullet color */
+    opacity: 1;
+    transform: scale(1.2); /* Optional: enlarge the active bullet */
+  }
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    color: #FF6B35; /* Set the color of the navigation buttons */
+    opacity: 0.8; /* Optional: Add transparency */
+    transition: color 0.3s ease, opacity 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .custom-swiper .swiper-button-next:hover,
+  .custom-swiper .swiper-button-prev:hover {
+    color: #FF6B35; /* Keep the same color */
+    opacity: 1; /* Increase opacity on hover */
+  }
+  
+  /* Optional: Customize the background or shape */
+  .custom-swiper .swiper-button-next::after,
+  .custom-swiper .swiper-button-prev::after {
+    font-size: 1.5rem; /* Adjust the arrow size */
+  }
+    

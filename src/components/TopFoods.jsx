@@ -5,7 +5,7 @@ import axiosPublic from "../hooks/axiosPublic";
 import Loading from "../pages/Loading";
 
 const fetchTopFoods = async () => {
-    const response = await axiosPublic.get("/foods", {
+    const response = await axiosPublic.get("/limitFoods", {
         params: {
             sortBy: "purchaseCount", // Sort by purchase count
             limit: 6, // Limit results to 6
@@ -21,7 +21,7 @@ const TopFoods = () => {
     });
 
     if (isLoading) {
-        return <Loading/>;
+        return <Loading />;
     }
 
     if (isError) {
@@ -33,7 +33,7 @@ const TopFoods = () => {
     }
 
     return (
-        <div className="py-10 px-6">
+        <div className="w-4/5 mx-auto py-16">
             {/* Title and Subtitle */}
             <motion.div
                 className="text-center mb-8"
@@ -41,15 +41,15 @@ const TopFoods = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-                <h2 className="text-4xl font-bold text-blue-600">Top Selling Foods</h2>
-                <p className="text-gray-500 text-lg mt-2">
+                <h2 className="text-4xl font-bold text-light-primary dark:text-light-primary">Top Selling Foods</h2>
+                <p className="text-gray-500 dark:text-light-text-muted text-lg mt-2">
                     These foods are highly purchased by our customers!
                 </p>
             </motion.div>
 
             {/* Cards */}
             <motion.div
-                className="grid grid-cols-1 md:grid-cols-3 gap-6"
+                className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1 }}
@@ -57,34 +57,43 @@ const TopFoods = () => {
                 {foods.map((food) => (
                     <motion.div
                         key={food._id}
-                        className="border rounded-lg shadow-lg p-4 flex flex-col items-center bg-white"
+                        className="border rounded-xl shadow-md p-4 bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary flex flex-col items-center"
                         initial={{ scale: 0.9, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
                         whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.5 }}
                     >
+                        {/* Image */}
                         <img
                             src={food.foodImage}
                             alt={food.foodName}
-                            className="w-full h-40 object-cover rounded"
+                            className="w-full h-40 object-contain rounded-t-xl"
                         />
-                        <h3 className="text-xl font-bold mt-4">{food.foodName}</h3>
-                        <p className="text-gray-600">Category: {food.foodCategory}</p>
-                        <p className="text-gray-600">Price: ${food.price}</p>
-                        <p className="text-gray-600">
+                        
+                        {/* Title and Info */}
+                        <div className="mt-4 text-center">
+                            <h3 className="text-lg font-semibold">{food.foodName}</h3>
+                            <p className="text-sm text-light-text-secondary dark:text-dark-text-secondary mt-1">{food.foodCategory}</p>
+                            <p className="text-sm text-light-text-secondary dark:text-dark-text-secondary">Price: ${food.price}</p>
+                        </div>
+                        
+                        {/* Purchase Count */}
+                        <div className="text-sm text-light-text-muted dark:text-dark-text-muted mt-2">
                             Purchased: {food.purchaseCount} times
+                        </div>
+                        
+                        {/* Description */}
+                        <p className="text-xs text-light-text-muted dark:text-dark-text-muted mt-2">
+                            {food.description}
                         </p>
-                        <p className="text-sm text-gray-500 mt-2">{food.description}</p>
 
-                        {/* View Details Button */}
-                        <Link to={`/food/${food._id}`}>
-                            <motion.button
-                                className="bg-blue-600 text-white px-4 py-2 mt-4 rounded-lg hover:bg-blue-700 transition-colors"
-                                whileHover={{ scale: 1.1 }}
-                                whileTap={{ scale: 0.9 }}
+                        {/* Quick View Button */}
+                        <Link to={`/food/${food._id}`} className="w-full">
+                            <button
+                                className="bg-light-primary dark:bg-dark-primary text-white px-4 py-2 mt-4 rounded-lg w-full hover:bg-light-secondary dark:hover:bg-dark-secondary transition-colors"
                             >
-                                View Details
-                            </motion.button>
+                                Quick View
+                            </button>
                         </Link>
                     </motion.div>
                 ))}
@@ -99,7 +108,7 @@ const TopFoods = () => {
             >
                 <Link to="/allFoods">
                     <motion.button
-                        className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors"
+                        className="bg-light-primary dark:bg-dark-primary text-white px-6 py-3 rounded-lg hover:bg-light-secondary dark:hover:bg-dark-secondary transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                     >

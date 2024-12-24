@@ -2,13 +2,36 @@ import { faker } from '@faker-js/faker';
 import fs from 'fs';
 
 const foodNames = [
-    "Caesar Salad", "Margherita Pizza", "Chocolate Brownie", "Chicken Biryani",
-    "Vegetable Stir Fry", "Spaghetti Carbonara", "Margarita Cocktail", 
-    "Tomato Soup", "Grilled Cheese Sandwich", "Pancakes", "Sushi Roll", 
-    "Tacos", "Buffalo Wings", "Cheeseburger", "Vanilla Ice Cream",
-    "French Fries", "Egg Fried Rice", "Chicken Alfredo", "Crispy Spring Rolls",
-    "Veggie Wrap"
-  ];
+  "Caesar Salad", "Margherita Pizza", "Chocolate Brownie", "Chicken Biryani",
+  "Vegetable Stir Fry", "Spaghetti Carbonara", "Margarita Cocktail", 
+  "Tomato Soup", "Grilled Cheese Sandwich", "Pancakes", "Sushi Roll", 
+  "Tacos", "Buffalo Wings", "Cheeseburger", "Vanilla Ice Cream",
+  "French Fries", "Egg Fried Rice", "Chicken Alfredo", "Crispy Spring Rolls",
+  "Veggie Wrap"
+];
+
+const foodImages = {
+  "Egg Fried Rice": "https://i.ibb.co/WgH2N9Q/Egg-Fried-Rice.png",
+  "Buffalo Wings": "https://i.ibb.co/QjX0pJG/Buffalo-Wings.png",
+  "Tacos": "https://i.ibb.co/VBcWLSx/Tacos.png",
+  "Grilled Cheese Sandwich": "https://i.ibb.co/mGVCdxG/Grilled-Cheese-Sandwich.png",
+  "Tomato Soup": "https://i.ibb.co/VxJD6Xk/Tomato-Soup.png",
+  "Margarita Cocktail": "https://i.ibb.co/cTtwFCF/Margarita-Cocktail.png",
+  "Spaghetti Carbonara": "https://i.ibb.co/kgvND2k/Spaghetti-Carbonara.png",
+  "Margherita Pizza": "https://i.ibb.co/Q8f5hP8/Margherita-Pizza.png",
+  "Caesar Salad": "https://i.ibb.co/zXW4RgC/Caesar-Salad.png",
+  "Vanilla Ice Cream": "https://i.ibb.co/K0pMjWN/Vanilla-Ice-Cream.png",
+  "Veggie Wrap": "https://i.ibb.co/H2DyJzb/Veggie-Wrap.png",
+  "Vegetable Stir Fry": "https://i.ibb.co/VpqjHpk/Vegetable-Stir-Fry.png",
+  "Cheeseburger": "https://i.ibb.co/CwF4hKX/Cheeseburger.png",
+  "French Fries": "https://i.ibb.co/6PJjp56/French-Fries.png",
+  "Chicken Biryani": "https://i.ibb.co/WDG2x6W/Chicken-Biryani.png",
+  "Pancakes": "https://i.ibb.co/f9T8BkK/Pancakes.png",
+  "Chicken Alfredo": "https://i.ibb.co/rmgyQfp/Chicken-Alfredo.png",
+  "Sushi Roll": "https://i.ibb.co/q9CZc2D/Sushi-Roll.png",
+  "Chocolate Brownie": "https://i.ibb.co/qnYNK49/Chocolate-Brownie.png",
+  "Crispy Spring Rolls": "https://i.ibb.co/gdxL4fr/Crispy-Spring-Rolls.png"
+};
 
 const users = [
   { name: "Shakir", email: "shakir@gmail.com" },
@@ -66,7 +89,7 @@ for (let i = 0; i < 100; i++) {
 
   data.push({
     foodName: foodName,
-    foodImage: "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp",
+    foodImage: foodImages[foodName] || "https://i.ibb.co/xfbYhMB/Arthur-Morgan.webp", // Default image
     foodCategory: category,
     quantity: faker.number.int({ min: 0, max: 20 }),
     price: faker.number.int({ min: 5, max: 50 }),
@@ -81,8 +104,7 @@ for (let i = 0; i < 100; i++) {
       carbs: faker.number.int({ min: 10, max: 100 }),
       fat: faker.number.int({ min: 5, max: 50 }),
     },
-    popularity: faker.number.int({ min: 10, max: 200 }),
-    purchaseCount: faker.number.int({ min: 0, max: 0}),
+    purchaseCount: faker.number.int({ min: 0, max: 0 }),
     preparationTime: `${faker.number.int({ min: 10, max: 60 })} minutes`,
     isVegetarian: faker.datatype.boolean(),
   });
