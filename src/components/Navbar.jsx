@@ -51,23 +51,23 @@ const Navbar = () => {
                 <div className="navbar-end">
                     {
                         user?.email ?
-                            <div className='flex gap-4'>
-                                <div className="dropdown dropdown-end  border rounded-xl">
-                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar flex">
-                                        <div className="w-10 rounded-full">
-                                            <img src={user?.photoURL} />
+                            <div className='flex items-center gap-4'>
+                                <div className="dropdown dropdown-end border rounded-xl">
+                                    <label tabIndex={0} className="btn btn-ghost">
+                                        <div className=" rounded-full overflow-hidden flex justify-center items-center">
+                                            <img src={user?.photoURL} alt="User Avatar" className="object-cover w-10 h-10 rounded-full" />
+                                            <RiArrowDropDownLine className="text-4xl ml-2" />
                                         </div>
-                                        <p className="text-4xl"><RiArrowDropDownLine /></p>
                                     </label>
-                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64">
                                         <li><Link to='/myFoods'>My Foods</Link></li>
                                         <li><Link to='/addFood'>Add Food</Link></li>
                                         <li><Link to='/myOrders'>My Orders</Link></li>
                                     </ul>
-
                                 </div>
                                 <button onClick={logOut} className="btn btn-outline btn-error">Logout</button>
                             </div>
+
                             :
                             <NavLink to='/login' className="btn btn-outline btn-error">Login</NavLink>
                     }

@@ -223,26 +223,6 @@ const AddFood = () => {
           </div>
         </div>
 
-        {/* Popularity and Purchase Count Section */}
-        <div className="bg-white p-6 rounded-lg shadow-md">
-          <h2 className="text-xl font-semibold mb-4">Statistics</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {/* Popularity */}
-            <div>
-              <label className="block text-gray-700 mb-2">Popularity Score(How many people like this food)</label>
-              <input
-                type="number"
-                className="w-full p-3 border border-gray-300 rounded"
-                name="popularity"
-                placeholder="Enter popularity score"
-                min="0"
-                defaultValue="0"
-                required
-              />
-            </div>
-          </div>
-        </div>
-
         {/* Description and Ingredients Section */}
         <div className="bg-white p-6 rounded-lg shadow-md">
           <h2 className="text-xl font-semibold mb-4">Details</h2>
