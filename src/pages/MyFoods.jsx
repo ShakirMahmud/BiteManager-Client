@@ -85,7 +85,12 @@ const MyFoods = () => {
                 </div>
 
                 {/* Table Section */}
-                <div className="bg-light-background dark:bg-dark-background rounded-lg shadow-xl overflow-hidden">
+                {foods.length === 0 ? (
+                    <div className="text-center text-light-text-secondary dark:text-dark-text-secondary text-lg">
+                        You didn't add any foods yet.
+                    </div>
+                ) : 
+                (<div className="bg-light-background dark:bg-dark-background rounded-lg shadow-xl overflow-hidden">
                     <div className="overflow-x-auto">
                         <table className="w-full border-collapse">
                             <thead className="bg-light-primary dark:bg-dark-primary text-white">
@@ -181,7 +186,7 @@ const MyFoods = () => {
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </div>)}
             </div>
 
             {/* Modal */}

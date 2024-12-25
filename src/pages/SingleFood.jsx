@@ -29,28 +29,48 @@ const SingleFood = () => {
       <Helmet>
         <title>{food.foodName} - BiteManager</title>
       </Helmet>
-      <div className="w-4/5 mx-auto px-4 lg:px-8">
+      <div className="lg:w-4/5 mx-auto px-4 lg:px-8">
         {/* Food Details Section */}
         <div className="bg-light-card dark:bg-dark-card rounded-xl shadow-xl p-6 lg:p-10">
           <div className="flex flex-col lg:flex-row gap-8">
             {/* Food Image */}
-            <div className="w-full lg:w-2/3 flex justify-center">
+            <div className="w-full lg:w-2/3 flex flex-col space-y-3 justify-center">
               <img
                 src={food.foodImage}
                 alt={food.foodName}
                 className="rounded-xl shadow-lg object-contain max-h-96 w-full"
               />
+              <div className="flex-1 text-light-text-primary dark:text-dark-text-primary">
+                <h1 className="text-3xl font-extrabold mb-4">{food.foodName}</h1>
+                <p className="text-lg text-light-text-secondary dark:text-dark-text-secondary">
+                  {food.foodCategory}
+                </p>
+                <p className="text-md text-light-text-muted dark:text-dark-text-muted">
+                  Origin: {food.foodOrigin}
+                </p>
+                {/* Description */}
+                <div className="mt-6">
+                  <h3 className="text-xl font-semibold mb-2">Description</h3>
+                  <p className="text-light-text-muted dark:text-dark-text-muted">
+                    {food.description}
+                  </p>
+                </div>
+                {/* Making Procedure */}
+              <div className="mt-6">
+                <h3 className="text-xl font-semibold mb-2">Making Procedure</h3>
+                <p className="text-light-text-muted dark:text-dark-text-muted">
+                  {food.makingProcedure}
+                </p>
+              </div>
+              </div>
+              
             </div>
 
             {/* Food Information */}
             <div className="flex-1 text-light-text-primary dark:text-dark-text-primary">
-              <h1 className="text-3xl font-extrabold mb-4">{food.foodName}</h1>
-              <p className="text-lg text-light-text-secondary dark:text-dark-text-secondary">
-                {food.foodCategory}
-              </p>
-              <p className="text-md text-light-text-muted dark:text-dark-text-muted">
-                Origin: {food.foodOrigin}
-              </p>
+
+
+
               <p className="text-lg font-semibold text-light-primary dark:text-dark-primary mt-4">
                 Price: ${food.price}
               </p>
@@ -58,13 +78,7 @@ const SingleFood = () => {
                 Quantity Available: {food.quantity}
               </p>
 
-              {/* Description */}
-              <div className="mt-6">
-                <h3 className="text-xl font-semibold mb-2">Description</h3>
-                <p className="text-light-text-muted dark:text-dark-text-muted">
-                  {food.description}
-                </p>
-              </div>
+
 
               {/* Ingredients */}
               <div className="mt-6">
@@ -76,13 +90,7 @@ const SingleFood = () => {
                 </ul>
               </div>
 
-              {/* Making Procedure */}
-              <div className="mt-6">
-                <h3 className="text-xl font-semibold mb-2">Making Procedure</h3>
-                <p className="text-light-text-muted dark:text-dark-text-muted">
-                  {food.makingProcedure}
-                </p>
-              </div>
+              
 
               {/* Nutrition Facts */}
               <div className="mt-6">
@@ -120,7 +128,7 @@ const SingleFood = () => {
               </div>
 
               {/* Purchase Info */}
-              <div className="flex flex-wrap items-center justify-between mt-8">
+              <div className="flex flex-wrap flex-col lg:flex-row items-start lg:items-center justify-between mt-8">
                 <div className="text-light-text-secondary dark:text-dark-text-secondary">
                   <h3 className="text-xl font-semibold">Purchase Count</h3>
                   <p>{food.purchaseCount} purchases this month</p>

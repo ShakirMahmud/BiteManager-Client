@@ -36,3 +36,9 @@ body{
     font-size: 1.5rem; /* Adjust the arrow size */
   }
     
+/* Leaflet Default Styles */
+.leaflet-container {
+  width: 100%;
+  height: 400px;
+  z-index: 0;
+}

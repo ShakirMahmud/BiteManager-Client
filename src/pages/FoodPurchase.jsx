@@ -6,6 +6,7 @@ import useAuth from "../hooks/useAuth";
 import { useState } from "react";
 import Swal from 'sweetalert2';
 import { Helmet } from "react-helmet-async";
+import MapPicker from "../components/MapPicker";
 
 const fetchFoodById = async (id, axiosSecure) => {
     window.scrollTo(0, 0);
@@ -18,6 +19,16 @@ const FoodPurchase = () => {
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
     const navigate = useNavigate();
+    const [selectedLocation, setSelectedLocation] = useState({
+        lat: null,
+        lng: null,
+        address: "",
+    });
+
+    const handleLocationChange = (location) => {
+        setSelectedLocation(location);
+    };
+
 
     const { data: food, isLoading, isError, error } = useQuery({
         queryKey: ['food', id],
@@ -65,12 +76,28 @@ const FoodPurchase = () => {
     };
 
     const handleQuantityChange = (action) => {
-        if (action === 'increment' && quantityToBuy < food.quantity) {
-            setQuantityToBuy(quantityToBuy + 1);
-        } else if (action === 'decrement' && quantityToBuy > 1) {
-            setQuantityToBuy(quantityToBuy - 1);
+        if (action === 'increment') {
+            if (quantityToBuy < food.quantity) {
+                setQuantityToBuy(quantityToBuy + 1);
+            } else {
+                Swal.fire({
+                    icon: 'info',
+                    title: 'Limit Reached',
+                    text: `You can only purchase up to ${food.quantity} items.`,
+                    toast: true,
+                    position: 'top-end',
+                    timer: 3000,
+                    timerProgressBar: true,
+                    showConfirmButton: false,
+                });
+            }
+        } else if (action === 'decrement') {
+            if (quantityToBuy > 1) {
+                setQuantityToBuy(quantityToBuy - 1);
+            }
         }
     };
+
 
     if (isLoading) {
         return <Loading />;
@@ -88,11 +115,11 @@ const FoodPurchase = () => {
     const isOutOfStock = food.quantity === 0;
 
     return (
-        <div className="bg-light-background dark:bg-dark-background  py-8">
+        <div className="bg-light-background dark:bg-dark-background px-4 py-8">
             <Helmet>
                 <title>Purchase - BiteManager</title>
             </Helmet>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-4/5 mx-auto bg-light-card dark:bg-dark-card p-6 rounded-lg shadow-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:w-4/5 mx-auto  bg-light-card dark:bg-dark-card p-6 rounded-lg shadow-lg">
                 {/* Left Section: Food Details */}
                 <div>
                     <img src={food.foodImage} alt={food.foodName} className="w-full lg:h-96 object-contain rounded-lg" />
@@ -104,7 +131,7 @@ const FoodPurchase = () => {
                 </div>
 
                 {/* Right Section: Purchase Form */}
-                <div className="p-6 bg-white dark:bg-dark-card rounded-lg shadow-lg">
+                <div className="lg:p-6 bg-white dark:bg-dark-card rounded-lg shadow-lg">
                     <h3 className="text-2xl font-bold mb-4 text-light-text-primary dark:text-dark-text-primary">Purchase Food</h3>
 
                     <div className="mb-4">
@@ -129,15 +156,29 @@ const FoodPurchase = () => {
                         <button
                             onClick={() => handleQuantityChange('increment')}
                             className="px-4 py-2 bg-light-secondary dark:bg-dark-secondary text-white rounded-lg"
-                            disabled={quantityToBuy === food.quantity}
+                        // disabled={quantityToBuy === food.quantity}
                         >
                             +
                         </button>
                     </div>
+                    <div>
+                        <h3 className="text-2xl font-bold text-light-text-primary dark:text-dark-text-primary mb-4">Select Delivery Address</h3>
+                        <MapPicker onLocationChange={handleLocationChange} />
+                        <div className="mt-4">
+                            <label className="block text-sm text-light-text-secondary dark:text-dark-text-secondary mb-2 font-medium">Selected Address:</label>
+                            <input
+                                type="text"
+                                value={selectedLocation.address}
+                                readOnly
+                                className="w-full px-3 py-2 border text-light-text-primary dark:text-dark-text-primary bg-light-card dark:bg-dark-card rounded-lg"
+                            />
+                        </div>
+                    </div>
+
 
                     <button
                         onClick={handlePurchase}
-                        className="w-full py-2 bg-light-primary dark:bg-dark-primary text-white rounded-lg hover:bg-light-accent dark:hover:bg-dark-accent disabled:bg-gray-300"
+                        className="w-full py-2 mt-4 bg-light-primary dark:bg-dark-primary text-white rounded-lg hover:bg-light-accent dark:hover:bg-dark-accent disabled:bg-gray-300"
                         disabled={isOutOfStock || isOwnFood || quantityToBuy <= 0}
                     >
                         {isOutOfStock

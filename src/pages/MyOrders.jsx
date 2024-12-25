@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
 import useAuth from "../hooks/useAuth";
 import useAxiosSecure from "../hooks/useAxiosSecure";
@@ -17,12 +17,14 @@ const MyOrders = () => {
     const { user } = useAuth();
     const axiosSecure = useAxiosSecure();
     const [orders, setOrders] = useState([]);
+    const [hasFetched, setHasFetched] = useState(false); 
 
     const { isLoading, isError, error } = useQuery({
         queryKey: ["orders", user?.email],
         queryFn: async () => {
             const data = await fetchOrders(user?.email, axiosSecure);
             setOrders(data);
+            setHasFetched(true);  
             return data;
         },
         enabled: !!user?.email,
@@ -52,7 +54,7 @@ const MyOrders = () => {
         });
     };
 
-    if (isLoading) {
+    if (isLoading || !hasFetched) {
         return <Loading />;
     }
 
@@ -74,7 +76,8 @@ const MyOrders = () => {
                     My Orders
                 </h1>
 
-                {orders.length === 0 ? (
+                {/* Only show this if orders are fetched and empty */}
+                {hasFetched && orders.length === 0 ? (
                     <div className="text-center text-light-text-secondary dark:text-dark-text-secondary text-lg">
                         No orders found
                     </div>
