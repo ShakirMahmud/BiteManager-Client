@@ -51,10 +51,17 @@ const AllFoods = () => {
     }, [searchQuery, currentPage]);
 
 
+    const handleSearch = (e) => {
+        setSearchQuery(e.target.value);
+        setCurrentPage(1);
+    };
 
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
+    };
+    const handleSearchIconClick = () => {
+        setSearchQuery(searchQuery);
     };
 
 
@@ -87,18 +94,15 @@ const AllFoods = () => {
                         type="text"
                         placeholder="Search for foods..."
                         value={searchQuery}
-                        onChange={(e) => {
-                            setSearchQuery(e.target.value)
-                            setCurrentPage(1)
-                        }}
+                        onChange={handleSearch}
                         className="w-full px-4 py-2 text-light-text-primary dark:text-dark-text-primary bg-light-card dark:bg-dark-card rounded-lg shadow-md outline-none transition-all duration-300 focus:ring-2 focus:ring-light-primary dark:focus:ring-dark-primary"
                     />
-                    <button
-                        onClick={() => setSearchQuery('')}
+                    <div
+                        onClick={handleSearchIconClick}
                         className="p-2 bg-btn_color text-white rounded-full shadow-md hover:bg-light-accent dark:hover:bg-dark-accent transition-all"
                     >
                         <FiSearch size={20} />
-                    </button>
+                    </div>
                 </div>
             </div>
 

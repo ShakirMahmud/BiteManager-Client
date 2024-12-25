@@ -140,7 +140,12 @@ const FoodPurchase = () => {
                         className="w-full py-2 bg-light-primary dark:bg-dark-primary text-white rounded-lg hover:bg-light-accent dark:hover:bg-dark-accent disabled:bg-gray-300"
                         disabled={isOutOfStock || isOwnFood || quantityToBuy <= 0}
                     >
-                        {isOutOfStock ? 'Out of Stock' : 'Purchase' || isOwnFood ? 'You cannot purchase your own food item.' : 'Purchase'}
+                        {isOutOfStock
+                            ? 'Out of Stock'
+                            : isOwnFood
+                                ? 'You cannot purchase your own food item.'
+                                : 'Purchase'}
+
                     </button>
                 </div>
             </div>
