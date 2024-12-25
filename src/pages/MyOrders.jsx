@@ -7,6 +7,7 @@ import moment from "moment";
 import Swal from "sweetalert2";
 
 const fetchOrders = async (email, axiosSecure) => {
+    window.scrollTo(0, 0);
     const response = await axiosSecure.get(`/purchase?email=${email}`);
     return response.data;
 };

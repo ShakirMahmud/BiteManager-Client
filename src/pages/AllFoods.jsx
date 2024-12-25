@@ -37,7 +37,8 @@ const AllFoods = () => {
             setIsLoading(true);
             try {
                 const response = await axiosPublic.get(`/foods?search=${searchQuery}&page=${currentPage - 1}&limit=${itemsPerPage}`);
-                setFoods(response.data);
+                setFoods(response.data.foods);
+                setCount(response.data.totalCount);
             } catch (error) {
                 console.error('Error fetching foods:', error);
             } finally {
@@ -48,9 +49,13 @@ const AllFoods = () => {
         fetchFoods();
     }, [searchQuery, currentPage]);
 
+    
+    
+
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
+    
 
     return (
         <div className="min-h-screen py-12 bg-light-background dark:bg-dark-background transition-colors duration-300">
@@ -78,7 +83,9 @@ const AllFoods = () => {
                         type="text"
                         placeholder="Search for foods..."
                         value={searchQuery}
-                        onChange={(e) => setSearchQuery(e.target.value)}
+                        onChange={(e) => {setSearchQuery(e.target.value)
+                        setCurrentPage(1)
+                        }}
                         className="w-full px-4 py-2 text-light-text-primary dark:text-dark-text-primary bg-light-card dark:bg-dark-card rounded-lg shadow-md outline-none transition-all duration-300 focus:ring-2 focus:ring-light-primary dark:focus:ring-dark-primary"
                     />
                     <button

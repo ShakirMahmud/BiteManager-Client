@@ -7,6 +7,7 @@ import { useState } from "react";
 import Swal from 'sweetalert2'; 
 
 const fetchFoodById = async (id, axiosSecure) => {
+    window.scrollTo(0, 0);
     const response = await axiosSecure.get(`/food/${id}`);
     return response.data;
 };
@@ -135,14 +136,8 @@ const FoodPurchase = () => {
                         className="w-full py-2 bg-light-primary dark:bg-dark-primary text-white rounded-lg hover:bg-light-accent dark:hover:bg-dark-accent disabled:bg-gray-300"
                         disabled={isOutOfStock || isOwnFood || quantityToBuy <= 0}
                     >
-                        {isOutOfStock ? 'Out of Stock' : 'Purchase'}
+                        {isOutOfStock ? 'Out of Stock' : 'Purchase' || isOwnFood ? 'You cannot purchase your own food item.' : 'Purchase'}
                     </button>
-                    {isOwnFood && (
-                        <p className="text-red-500 mt-2">You cannot purchase your own food item.</p>
-                    )}
-                    {isOutOfStock && (
-                        <p className="text-red-500 mt-2">This item is out of stock.</p>
-                    )}
                 </div>
             </div>
         </div>

@@ -21,7 +21,7 @@ const AuthProvider = ({ children }) => {
     const createJWT = async (currentUser) => {
         if (currentUser) {
             try {
-                await axios.post('http://localhost:5000/jwt', 
+                await axios.post('https://bite-manager-server.vercel.app/jwt', 
                     { email: currentUser.email },
                     { withCredentials: true }
                 );
@@ -49,7 +49,7 @@ const AuthProvider = ({ children }) => {
         setLoading(true);
         try {
             // Clear the cookie on the server
-            await axios.post('http://localhost:5000/logout', {}, 
+            await axios.post('https://bite-manager-server.vercel.app/logout', {}, 
                 { withCredentials: true }
             );
             await signOut(auth);

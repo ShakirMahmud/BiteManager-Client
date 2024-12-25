@@ -4,8 +4,10 @@ import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import { ArrowUpDown, Clock, MapPin, ChefHat, DollarSign } from "lucide-react";
+import Loading from "../pages/Loading";
 
 const fetchFoodById = async (email, axiosSecure) => {
+    window.scrollTo(0, 0);
     const response = await axiosSecure.get(`/foods?email=${email}`);
     return response.data;
 };
@@ -59,7 +61,7 @@ const MyFoods = () => {
         }
     };
 
-    if (isLoading) return <div className="text-center py-10">Loading...</div>;
+    if (isLoading) return <Loading/>;
     if (isError) return <div className="text-center py-10">Error: {error.message}</div>;
 
     return (

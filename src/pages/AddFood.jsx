@@ -2,6 +2,7 @@ import { useState } from "react";
 import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
 import useAxiosSecure from "../hooks/useAxiosSecure";
+import Loading from "../pages/Loading";
 
 const AddFood = () => {
   const { user } = useAuth();
@@ -61,6 +62,9 @@ const AddFood = () => {
       setLoading(false);
     }
   };
+  if(loading){
+    <Loading/>
+  }
 
   const inputClassName = "input input-bordered border-2 border-light-background dark:border-dark-background text-light-text-primary dark:text-dark-text-primary w-full bg-light-background dark:bg-dark-card focus:border-btn_color dark:focus:border-dark-primary transition-all duration-300";
   const sectionClassName = "card bg-light-card dark:bg-dark-card shadow-lg hover:shadow-xl transition-all duration-300";

@@ -7,8 +7,8 @@ import Loading from "../pages/Loading";
 const fetchTopFoods = async () => {
     const response = await axiosPublic.get("/limitFoods", {
         params: {
-            sortBy: "purchaseCount", // Sort by purchase count
-            limit: 6, // Limit results to 6
+            sortBy: "purchaseCount", 
+            limit: 6, 
         },
     });
     return response.data;
