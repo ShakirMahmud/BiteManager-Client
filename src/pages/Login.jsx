@@ -71,39 +71,69 @@ const Login = () => {
     }
 
     return (
-        <div>
-            <div className="card bg-white w-full max-w-xl mx-auto p-6 rounded-xl shrink-0 shadow-2xl">
+        <div className="min-h-screen flex items-center justify-center bg-light-background dark:bg-dark-background">
+            <div className="card bg-light-card dark:bg-dark-card w-full max-w-xl mx-auto p-6 rounded-xl shadow-2xl">
                 <form onSubmit={handleSignIn} className="card-body">
-                    <div className="form-control">
+                    <div className="form-control mb-4">
                         <label className="label">
-                            <span className="label-text">Email</span>
+                            <span className="label-text text-light-text-primary dark:text-dark-text-primary">Email</span>
                         </label>
-                        <input type="email" name='email' placeholder="email" className="input input-bordered" required />
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="email"
+                            className="input input-bordered rounded-lg bg-light-background dark:bg-dark-background text-light-text-primary dark:text-dark-text-primary"
+                            required
+                        />
                     </div>
-                    <div className="form-control relative">
+                    <div className="form-control relative mb-4">
                         <label className="label">
-                            <span className="label-text">Password</span>
+                            <span className="label-text text-light-text-primary dark:text-dark-text-primary">Password</span>
                         </label>
-                        <input type={isClicked ? 'password' : 'text'} name='password' placeholder="password" className="input rounded-xl input-bordered" required />
-                        <button type='button' onClick={() => setIsClicked(!isClicked)} className="absolute right-5 top-[3rem] text-2xl text-gray-700">
+                        <input
+                            type={isClicked ? 'password' : 'text'}
+                            name="password"
+                            placeholder="password"
+                            className="input input-bordered rounded-lg bg-light-background dark:bg-dark-background text-light-text-primary dark:text-dark-text-primary"
+                            required
+                        />
+                        <button
+                            type="button"
+                            onClick={() => setIsClicked(!isClicked)}
+                            className="absolute right-5 top-[3rem] text-2xl text-light-text-secondary dark:text-dark-text-muted"
+                        >
                             {isClicked ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
                         </button>
                         <label>
-                            <Link to='/auth/forgetPassword' className="label-text-alt link link-hover">Forgot password?</Link>
+                            <Link
+                                to="/auth/forgetPassword"
+                                className="label-text-alt link link-hover text-light-text-muted dark:text-dark-text-secondary"
+                            >
+                                Forgot password?
+                            </Link>
                         </label>
                     </div>
                     <div className="form-control mt-6">
-                        <button type='submit' className="btn btn-primary bg-btn_bg rounded-xl text-white">Login</button>
+                        <button
+                            type="submit"
+                            className="btn btn-primary bg-light-primary dark:bg-dark-primary text-white hover:bg-light-secondary dark:hover:bg-dark-secondary rounded-lg"
+                        >
+                            Login
+                        </button>
                     </div>
                 </form>
                 <div className="text-center mt-6">
-                    <span className="label-text">Don't have an account yet? </span>
-                    <Link to='/Register' className="link link-hover">Sign Up</Link>
+                    <span className="label-text text-light-text-secondary dark:text-dark-text-muted">
+                        Don't have an account yet?{' '}
+                    </span>
+                    <Link to="/Register" className="link link-hover text-light-secondary dark:text-dark-secondary font-semibold">
+                        Sign Up
+                    </Link>
                 </div>
                 <div className="w-full flex justify-center py-6">
                     <button
                         onClick={handleSignInWithGoogle}
-                        className="flex items-center gap-2 px-6 py-3 bg-white text-gray-600 rounded-lg shadow hover:shadow-md transition-all duration-300 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                        className="flex items-center gap-2 px-6 py-3 bg-light-card dark:bg-dark-card text-light-text-secondary dark:text-dark-text-muted rounded-lg shadow hover:shadow-lg transition-all duration-300 border border-light-secondary dark:border-dark-secondary"
                     >
                         <FcGoogle size={24} />
                         <span className="text-lg font-medium">Log In with Google</span>
@@ -112,6 +142,7 @@ const Login = () => {
             </div>
         </div>
     );
+    
 };
 
 export default Login;

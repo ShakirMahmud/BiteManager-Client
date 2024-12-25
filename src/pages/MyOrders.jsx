@@ -20,7 +20,7 @@ const MyOrders = () => {
         queryKey: ["orders", user?.email],
         queryFn: async () => {
             const data = await fetchOrders(user?.email, axiosSecure);
-            setOrders(data); // Store fetched orders in local state
+            setOrders(data);
             return data;
         },
         enabled: !!user?.email,
@@ -40,8 +40,6 @@ const MyOrders = () => {
                 try {
                     await axiosSecure.delete(`/purchase/${orderId}`);
                     Swal.fire("Deleted!", "Order has been deleted.", "success");
-
-                    // Update local state after deletion
                     setOrders((prevOrders) =>
                         prevOrders.filter((order) => order._id !== orderId)
                     );
@@ -57,48 +55,73 @@ const MyOrders = () => {
     }
 
     if (isError) {
-        return <div>Error: {error.message}</div>;
+        return (
+            <div className="min-h-screen flex items-center justify-center bg-light-background dark:bg-dark-background">
+                <div className="text-error text-lg">Error: {error.message}</div>
+            </div>
+        );
     }
 
     return (
-        <div className="p-6 max-w-4xl mx-auto">
-            <h1 className="text-3xl font-bold mb-6 text-center">My Orders</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                {orders.map((order) => (
-                    <div
-                        key={order._id}
-                        className="border p-4 rounded-lg shadow-lg flex flex-col justify-between"
-                    >
-                        {/* Food Image and Info */}
-                        <div className="flex items-start space-x-4">
-                            <img
-                                src={order.foodImage}
-                                alt={order.foodName}
-                                className="w-24 h-24 object-cover rounded"
-                            />
-                            <div>
-                                <h2 className="text-xl font-bold">{order.foodName}</h2>
-                                <p className="text-gray-700">Price: ${order.price}</p>
-                                <p className="text-gray-700">Owner: {order.foodOwner}</p>
-                                <p className="text-gray-500 text-sm">
-                                    Ordered on: {moment(order.buyingDate).format(
-                                        "MMMM Do YYYY, h:mm:ss a"
-                                    )}
-                                </p>
-                            </div>
-                        </div>
+        <div className="min-h-screen bg-gradient-to-b from-light-background to-light-card dark:from-dark-background dark:to-dark-card p-4 md:p-8">
+            <div className="max-w-6xl mx-auto">
+                <h1 className="text-4xl font-bold text-center mb-8 text-light-text-primary dark:text-dark-text-primary">
+                    My Orders
+                </h1>
 
-                        {/* Delete Button */}
-                        <div className="flex justify-end mt-4">
-                            <button
-                                onClick={() => handleDelete(order._id)}
-                                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700"
-                            >
-                                Delete
-                            </button>
-                        </div>
+                {orders.length === 0 ? (
+                    <div className="text-center text-light-text-secondary dark:text-dark-text-secondary text-lg">
+                        No orders found
                     </div>
-                ))}
+                ) : (
+                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                        {orders.map((order) => (
+                            <div
+                                key={order._id}
+                                className="card bg-light-card dark:bg-dark-card shadow-lg hover:shadow-xl transition-all duration-300"
+                            >
+                                <div className="card-body p-4">
+                                    <div className="flex flex-col sm:flex-row gap-4">
+                                        <div className="relative w-full sm:w-32 h-32">
+                                            <img
+                                                src={order.foodImage}
+                                                alt={order.foodName}
+                                                className="w-full h-full object-cover rounded-lg"
+                                            />
+                                            <div className="absolute top-2 right-2">
+                                                <div className="badge badge-primary">${order.price}</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div className="flex-1 space-y-2">
+                                            <h2 className="card-title text-light-text-primary dark:text-dark-text-primary">
+                                                {order.foodName}
+                                            </h2>
+                                            <div className="text-light-text-secondary dark:text-dark-text-secondary">
+                                                <p className="flex items-center gap-2">
+                                                    <span className="font-semibold">Owner:</span>
+                                                    {order.foodOwner}
+                                                </p>
+                                                <p className="text-sm text-light-text-muted dark:text-dark-text-muted">
+                                                    Ordered on: {moment(order.buyingDate).format("MMMM Do YYYY, h:mm a")}
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="card-actions justify-end mt-4">
+                                        <button
+                                            onClick={() => handleDelete(order._id)}
+                                            className="btn btn-error btn-sm text-white hover:bg-opacity-80 transition-colors duration-300"
+                                        >
+                                            Delete Order
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                )}
             </div>
         </div>
     );
