@@ -4,12 +4,14 @@ import { FcGoogle } from 'react-icons/fc';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2';
+import useAxiosSecure from '../hooks/useAxiosSecure';
 
 const Login = () => {
     const [isClicked, setIsClicked] = useState(true);
     const { loginUser, setUser, signInWithGoogle } = useAuth();
     const location = useLocation();
     const navigate = useNavigate();
+    const axiosSecure = useAxiosSecure();
 
     const handleSignIn = (e) => {
         e.preventDefault();
@@ -42,11 +44,21 @@ const Login = () => {
                 })
             })
     };
+    const postToDB = (newUser) => {
+        axiosSecure.post('/users', newUser)
+            .then(data => {
+                if (data.data.insertedId) {
+                   console.log('User signed in:');
+                }
+            })
+    };
 
     const handleSignInWithGoogle = () => {
         signInWithGoogle()
             .then((result) => {
                 setUser(result.user);
+                const user = { name: result.user.displayName, photo: result.user.photoURL, email: result.user.email };
+                postToDB(user);
                 Swal.fire({
                     title: "Sign-In with Google Successful!",
                     text: "You have successfully signed in using Google. You will be redirected shortly, or click OK to proceed immediately.",
@@ -142,7 +154,7 @@ const Login = () => {
             </div>
         </div>
     );
-    
+
 };
 
 export default Login;
