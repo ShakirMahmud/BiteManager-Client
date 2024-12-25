@@ -5,12 +5,13 @@ import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../hooks/useAxiosSecure";
+import { Helmet } from "react-helmet-async";
 
 const Register = () => {
     const [isClicked, setIsClicked] = useState(true);
     const [error, setError] = useState('');
     const { createUser, signInWithGoogle, updateUserProfile, setUser } = useAuth();
-    const navigate = useNavigate(); 
+    const navigate = useNavigate();
     const axiosSecure = useAxiosSecure();
 
     const sweetAlert = () => {
@@ -60,7 +61,7 @@ const Register = () => {
             setError("Password must be at least 6 characters long.");
             return;
         }
-        
+
 
         createUser(email, password)
             .then((result) => {
@@ -98,6 +99,9 @@ const Register = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-light-background dark:bg-dark-background">
+            <Helmet>
+                <title>Register - BiteManager</title>
+            </Helmet>
             <div className="card bg-light-card dark:bg-dark-card w-full max-w-xl mx-auto p-6 rounded-xl shadow-2xl">
                 <form onSubmit={handleSignUp} className="card-body">
                     <div className="form-control mb-4">
@@ -196,7 +200,7 @@ const Register = () => {
             </div>
         </div>
     );
-    
+
 };
 
 export default Register;

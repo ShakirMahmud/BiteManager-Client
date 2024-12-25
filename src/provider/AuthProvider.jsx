@@ -37,7 +37,6 @@ const AuthProvider = ({ children }) => {
             setUser(loggedUser);
             if (loggedUser) {
                 await createJWT(loggedUser);
-                console.log('User signed in:', loggedUser);
             }
             setLoading(false);
         });

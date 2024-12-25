@@ -5,6 +5,7 @@ import useAuth from "../hooks/useAuth";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import { ArrowUpDown, Clock, MapPin, ChefHat, DollarSign } from "lucide-react";
 import Loading from "../pages/Loading";
+import { Helmet } from "react-helmet-async";
 
 const fetchFoodById = async (email, axiosSecure) => {
     window.scrollTo(0, 0);
@@ -61,11 +62,14 @@ const MyFoods = () => {
         }
     };
 
-    if (isLoading) return <Loading/>;
+    if (isLoading) return <Loading />;
     if (isError) return <div className="text-center py-10">Error: {error.message}</div>;
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-light-background to-light-card dark:from-dark-background dark:to-dark-card p-2 sm:p-4 md:p-6">
+            <Helmet>
+                <title>My Foods - BiteManager</title>
+            </Helmet>
             <div className="max-w-7xl mx-auto">
                 {/* Header Section */}
                 <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
@@ -99,11 +103,11 @@ const MyFoods = () => {
                             </thead>
                             <tbody>
                                 {foods?.map((food, index) => (
-                                    <tr 
-                                        key={food._id} 
+                                    <tr
+                                        key={food._id}
                                         className={`
-                                            ${index % 2 === 0 
-                                                ? 'bg-light-background dark:bg-dark-background' 
+                                            ${index % 2 === 0
+                                                ? 'bg-light-background dark:bg-dark-background'
                                                 : 'bg-light-card dark:bg-dark-card'
                                             }
                                             hover:bg-light-card/80 dark:hover:bg-dark-card/80 

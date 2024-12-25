@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axiosPublic from '../hooks/axiosPublic';
 import Loading from '../pages/Loading';
 import img from '../assets/img1.jpeg'
+import { Helmet } from 'react-helmet-async';
 
 const AllFoods = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -49,16 +50,19 @@ const AllFoods = () => {
         fetchFoods();
     }, [searchQuery, currentPage]);
 
-    
-    
+
+
 
     const handlePageChange = (page) => {
         setCurrentPage(page);
     };
-    
+
 
     return (
         <div className="min-h-screen py-12 bg-light-background dark:bg-dark-background transition-colors duration-300">
+            <Helmet>
+                <title>All Foods - BiteManager</title>
+            </Helmet>
             {/* Title Section */}
             <div
                 className="relative bg-cover bg-center h-80 flex flex-col items-center justify-center text-center px-4"
@@ -83,8 +87,9 @@ const AllFoods = () => {
                         type="text"
                         placeholder="Search for foods..."
                         value={searchQuery}
-                        onChange={(e) => {setSearchQuery(e.target.value)
-                        setCurrentPage(1)
+                        onChange={(e) => {
+                            setSearchQuery(e.target.value)
+                            setCurrentPage(1)
                         }}
                         className="w-full px-4 py-2 text-light-text-primary dark:text-dark-text-primary bg-light-card dark:bg-dark-card rounded-lg shadow-md outline-none transition-all duration-300 focus:ring-2 focus:ring-light-primary dark:focus:ring-dark-primary"
                     />
@@ -145,8 +150,8 @@ const AllFoods = () => {
             <div className="flex flex-wrap justify-center items-center mt-6 gap-2">
                 <button
                     className={`px-4 py-2 text-sm rounded-lg ${currentPage === 1
-                            ? 'bg-light-muted text-light-text-muted cursor-not-allowed'
-                            : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary'
+                        ? 'bg-light-muted text-light-text-muted cursor-not-allowed'
+                        : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary'
                         }`}
                     disabled={currentPage === 1}
                     onClick={() => handlePageChange(currentPage - 1)}
@@ -157,8 +162,8 @@ const AllFoods = () => {
                     <button
                         key={page}
                         className={`px-4 py-2 text-sm rounded-lg ${currentPage === page + 1
-                                ? 'bg-light-primary text-white'
-                                : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-secondary hover:text-white dark:hover:bg-dark-secondary'
+                            ? 'bg-light-primary text-white'
+                            : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-secondary hover:text-white dark:hover:bg-dark-secondary'
                             }`}
                         onClick={() => handlePageChange(page + 1)}
                     >
@@ -167,8 +172,8 @@ const AllFoods = () => {
                 ))}
                 <button
                     className={`px-4 py-2 text-sm rounded-lg ${currentPage === numberOfPages
-                            ? 'bg-light-muted text-light-text-muted cursor-not-allowed'
-                            : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary'
+                        ? 'bg-light-muted text-light-text-muted cursor-not-allowed'
+                        : 'bg-light-card dark:bg-dark-card text-light-text-primary dark:text-dark-text-primary hover:bg-light-primary hover:text-white dark:hover:bg-dark-primary'
                         }`}
                     disabled={currentPage === numberOfPages}
                     onClick={() => handlePageChange(currentPage + 1)}

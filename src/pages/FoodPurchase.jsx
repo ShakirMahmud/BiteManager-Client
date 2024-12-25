@@ -1,10 +1,11 @@
 import { useParams, useNavigate } from "react-router-dom";
 import Loading from "../pages/Loading";
 import { useQuery } from "@tanstack/react-query";
-import useAxiosSecure from './../hooks/useAxiosSecure'; 
+import useAxiosSecure from './../hooks/useAxiosSecure';
 import useAuth from "../hooks/useAuth";
 import { useState } from "react";
-import Swal from 'sweetalert2'; 
+import Swal from 'sweetalert2';
+import { Helmet } from "react-helmet-async";
 
 const fetchFoodById = async (id, axiosSecure) => {
     window.scrollTo(0, 0);
@@ -14,14 +15,14 @@ const fetchFoodById = async (id, axiosSecure) => {
 
 const FoodPurchase = () => {
     const { id } = useParams();
-    const { user } = useAuth(); 
-    const axiosSecure = useAxiosSecure(); 
-    const navigate = useNavigate(); 
+    const { user } = useAuth();
+    const axiosSecure = useAxiosSecure();
+    const navigate = useNavigate();
 
     const { data: food, isLoading, isError, error } = useQuery({
         queryKey: ['food', id],
-        queryFn: () => fetchFoodById(id, axiosSecure), 
-        enabled: !!id, 
+        queryFn: () => fetchFoodById(id, axiosSecure),
+        enabled: !!id,
     });
 
     const [quantityToBuy, setQuantityToBuy] = useState(1);
@@ -44,7 +45,7 @@ const FoodPurchase = () => {
             buyerEmail: user.email,
             buyingDate: Date.now(),
         };
-        
+
         try {
             // Store purchase in the database
             const response = await axiosSecure.post("/purchase", purchaseData);
@@ -53,7 +54,7 @@ const FoodPurchase = () => {
                 title: 'Purchase Successful!',
                 text: `You have successfully purchased ${quantityToBuy} of ${food.foodName}.`,
             });
-            navigate(`/food/${id}`); 
+            navigate(`/food/${id}`);
         } catch (err) {
             Swal.fire({
                 icon: 'error',
@@ -72,15 +73,15 @@ const FoodPurchase = () => {
     };
 
     if (isLoading) {
-        return <Loading />; 
+        return <Loading />;
     }
 
     if (isError) {
-        return <div className="text-red-500">Error: {error.message}</div>; 
+        return <div className="text-red-500">Error: {error.message}</div>;
     }
 
     if (!food) {
-        return <div className="text-red-500">No food data found!</div>; 
+        return <div className="text-red-500">No food data found!</div>;
     }
 
     const isOwnFood = food.addedBy.email === user.email;
@@ -88,6 +89,9 @@ const FoodPurchase = () => {
 
     return (
         <div className="bg-light-background dark:bg-dark-background  py-8">
+            <Helmet>
+                <title>Purchase - BiteManager</title>
+            </Helmet>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-4/5 mx-auto bg-light-card dark:bg-dark-card p-6 rounded-lg shadow-lg">
                 {/* Left Section: Food Details */}
                 <div>

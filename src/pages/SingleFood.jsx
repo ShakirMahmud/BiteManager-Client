@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axiosPublic from "../hooks/axiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import Loading from "../pages/Loading";
+import { Helmet } from "react-helmet-async";
 
 const fetchFoodById = async (id) => {
   window.scrollTo(0, 0);
@@ -25,6 +26,9 @@ const SingleFood = () => {
 
   return (
     <div className="bg-light-background dark:bg-dark-background min-h-screen py-8">
+      <Helmet>
+        <title>{food.foodName} - BiteManager</title>
+      </Helmet>
       <div className="w-4/5 mx-auto px-4 lg:px-8">
         {/* Food Details Section */}
         <div className="bg-light-card dark:bg-dark-card rounded-xl shadow-xl p-6 lg:p-10">

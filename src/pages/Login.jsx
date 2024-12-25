@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useAuth from '../hooks/useAuth';
 import Swal from 'sweetalert2';
 import useAxiosSecure from '../hooks/useAxiosSecure';
+import { Helmet } from 'react-helmet-async';
 
 const Login = () => {
     const [isClicked, setIsClicked] = useState(true);
@@ -48,7 +49,7 @@ const Login = () => {
         axiosSecure.post('/users', newUser)
             .then(data => {
                 if (data.data.insertedId) {
-                   console.log('User signed in:');
+                    console.log('User signed in:');
                 }
             })
     };
@@ -84,6 +85,9 @@ const Login = () => {
 
     return (
         <div className="min-h-screen flex items-center justify-center bg-light-background dark:bg-dark-background">
+            <Helmet>
+                <title>Login - BiteManager</title>
+            </Helmet>
             <div className="card bg-light-card dark:bg-dark-card w-full max-w-xl mx-auto p-6 rounded-xl shadow-2xl">
                 <form onSubmit={handleSignIn} className="card-body">
                     <div className="form-control mb-4">

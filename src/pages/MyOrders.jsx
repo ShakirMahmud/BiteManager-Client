@@ -5,6 +5,7 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import Loading from "./../pages/Loading";
 import moment from "moment";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 const fetchOrders = async (email, axiosSecure) => {
     window.scrollTo(0, 0);
@@ -65,6 +66,9 @@ const MyOrders = () => {
 
     return (
         <div className="min-h-screen bg-gradient-to-b from-light-background to-light-card dark:from-dark-background dark:to-dark-card p-4 md:p-8">
+            <Helmet>
+                <title>My Orders - BiteManager</title>
+            </Helmet>
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-center mb-8 text-light-text-primary dark:text-dark-text-primary">
                     My Orders
@@ -93,7 +97,7 @@ const MyOrders = () => {
                                                 <div className="badge badge-primary">${order.price}</div>
                                             </div>
                                         </div>
-                                        
+
                                         <div className="flex-1 space-y-2">
                                             <h2 className="card-title text-light-text-primary dark:text-dark-text-primary">
                                                 {order.foodName}

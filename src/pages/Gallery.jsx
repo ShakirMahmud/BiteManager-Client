@@ -4,6 +4,7 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import useAuth from "../hooks/useAuth";
 import img from '../assets/close-up-smiley-friends-restaurant.jpg'
+import { Helmet } from "react-helmet-async";
 
 const galleryImages = [
   { src: "https://i.ibb.co/WgH2N9Q/Egg-Fried-Rice.png", title: "Egg Fried Rice", description: "A delicious classic fried rice with eggs." },
@@ -33,6 +34,9 @@ const Gallery = () => {
 
   return (
     <div className="bg-light-background dark:bg-dark-background min-h-screen py-10 flex flex-col items-center">
+      <Helmet>
+        <title>Gallery - BiteManager</title>
+      </Helmet>
       {/* Title Section */}
       <motion.div
         className="text-center w-full mb-10"
@@ -49,12 +53,12 @@ const Gallery = () => {
 
           {/* Title */}
           <h1 className="relative text-5xl md:text-7xl font-bold text-dark-text-primary z-10">
-          Food Gallery
+            Food Gallery
           </h1>
 
           {/* Subtitle */}
           <p className="relative z-10 text-lg md:text-2xl font-semibold text-light-secondary dark:text-dark-secondary mt-4">
-          Discover and explore delicious meals shared by our community.
+            Discover and explore delicious meals shared by our community.
           </p>
         </div>
 

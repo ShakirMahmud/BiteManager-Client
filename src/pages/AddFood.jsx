@@ -3,6 +3,7 @@ import Swal from "sweetalert2";
 import useAuth from "../hooks/useAuth";
 import useAxiosSecure from "../hooks/useAxiosSecure";
 import Loading from "../pages/Loading";
+import { Helmet } from "react-helmet-async";
 
 const AddFood = () => {
   const { user } = useAuth();
@@ -41,7 +42,7 @@ const AddFood = () => {
 
     try {
       const response = await axiosSecure.post('/foods', formData);
-      
+
       if (response.data.insertedId) {
         Swal.fire({
           title: 'Success!',
@@ -62,8 +63,8 @@ const AddFood = () => {
       setLoading(false);
     }
   };
-  if(loading){
-    <Loading/>
+  if (loading) {
+    <Loading />
   }
 
   const inputClassName = "input input-bordered border-2 border-light-background dark:border-dark-background text-light-text-primary dark:text-dark-text-primary w-full bg-light-background dark:bg-dark-card focus:border-btn_color dark:focus:border-dark-primary transition-all duration-300";
@@ -72,6 +73,9 @@ const AddFood = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-light-background to-light-card dark:from-dark-background dark:to-dark-card p-4 md:p-8">
+      <Helmet>
+        <title>Add Food - BiteManager</title>
+      </Helmet>
       <div className="max-w-5xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-8 text-light-text-primary dark:text-dark-text-primary">
           Add New Food Item
@@ -183,22 +187,22 @@ const AddFood = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="form-control">
                   <label className={labelClassName}>Name</label>
-                  <input 
-                    type="text" 
-                    name="addedByName" 
-                    defaultValue={user?.displayName} 
-                    className={`${inputClassName} bg-gray-100 dark:bg-gray-700`} 
-                    readOnly 
+                  <input
+                    type="text"
+                    name="addedByName"
+                    defaultValue={user?.displayName}
+                    className={`${inputClassName} bg-gray-100 dark:bg-gray-700`}
+                    readOnly
                   />
                 </div>
                 <div className="form-control">
                   <label className={labelClassName}>Email</label>
-                  <input 
-                    type="email" 
-                    name="addedByEmail" 
-                    defaultValue={user?.email} 
-                    className={`${inputClassName} bg-gray-100 dark:bg-gray-700`} 
-                    readOnly 
+                  <input
+                    type="email"
+                    name="addedByEmail"
+                    defaultValue={user?.email}
+                    className={`${inputClassName} bg-gray-100 dark:bg-gray-700`}
+                    readOnly
                   />
                 </div>
               </div>
