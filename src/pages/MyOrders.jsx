@@ -97,7 +97,7 @@ const MyOrders = () => {
                                                 className="w-full h-full object-cover rounded-lg"
                                             />
                                             <div className="absolute top-2 right-2">
-                                                <div className="badge badge-primary">${order.price}</div>
+                                                <div className="badge badge-primary bg-btn_color border-none text-white">${order.price}</div>
                                             </div>
                                         </div>
 

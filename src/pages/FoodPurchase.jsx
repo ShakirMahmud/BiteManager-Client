@@ -3,7 +3,7 @@ import Loading from "../pages/Loading";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosSecure from './../hooks/useAxiosSecure';
 import useAuth from "../hooks/useAuth";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Swal from 'sweetalert2';
 import { Helmet } from "react-helmet-async";
 import MapPicker from "../components/MapPicker";
@@ -24,6 +24,16 @@ const FoodPurchase = () => {
         lng: null,
         address: "",
     });
+
+    const [currentDate, setCurrentDate] = useState(new Date());
+
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setCurrentDate(new Date());
+        }, 1000); 
+
+        return () => clearInterval(timer); 
+    }, []);
 
     const handleLocationChange = (location) => {
         setSelectedLocation(location);
@@ -134,10 +144,14 @@ const FoodPurchase = () => {
                 <div className="lg:p-6 bg-white dark:bg-dark-card rounded-lg shadow-lg">
                     <h3 className="text-2xl font-bold mb-4 text-light-text-primary dark:text-dark-text-primary">Purchase Food</h3>
 
-                    <div className="mb-4">
+                    <div className="mb-2">
                         <p className="text-light-text-secondary dark:text-dark-text-secondary">Buyer Name: <span className="font-semibold">{user.displayName}</span></p>
                         <p className="text-light-text-secondary dark:text-dark-text-secondary">Buyer Email: <span className="font-semibold">{user.email}</span></p>
                     </div>
+                    <p className="text-light-text-muted dark:text-dark-text-muted text-sm my-1">
+                    Current Date and Time: {currentDate.toLocaleString()}
+                    </p>
+
 
                     <div className="flex items-center gap-4 mb-4">
                         <button

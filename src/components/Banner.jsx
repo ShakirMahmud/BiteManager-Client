@@ -7,8 +7,10 @@ import 'swiper/css/pagination';
 import img1 from '../assets/img1.jpeg';
 import img2 from '../assets/close-up-smiley-friends-restaurant.jpg';
 import img3 from '../assets/medium-shot-happy-friends-taking-selfie.jpg';
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+  const navigate = useNavigate();
   return (
     <div className="relative">
       <Swiper
@@ -27,6 +29,7 @@ const Banner = () => {
               <h1 className="text-3xl lg:text-5xl font-bold">WE GET WHAT YOU LOVE</h1>
               <p className="mt-2 text-lg lg:text-xl">From Your Favorite Restaurants!</p>
               <button
+                onClick={() => navigate('/allFoods')}
                 className="mt-4 py-2 px-6 text-white rounded-lg"
                 style={{ backgroundColor: '#FF6B35' }}
               >
@@ -58,6 +61,7 @@ const Banner = () => {
               <h1 className="text-3xl lg:text-5xl font-bold">EAT TOGETHER, STAY TOGETHER</h1>
               <p className="mt-2 text-lg lg:text-xl">Bond Over Amazing Meals With Your Friends</p>
               <button
+                onClick={() => navigate('/allFoods')}
                 className="mt-4 py-2 px-6 text-white rounded-lg"
                 style={{ backgroundColor: '#FF6B35' }}
               >
@@ -89,6 +93,7 @@ const Banner = () => {
               <h1 className="text-3xl lg:text-5xl font-bold">FAST DELIVERY, FRESH FOOD</h1>
               <p className="mt-2 text-lg lg:text-xl">Get Your Food Delivered Anywhere, Anytime!</p>
               <button
+                onClick={() => navigate('/allFoods')}
                 className="mt-4 py-2 px-6 text-white rounded-lg"
                 style={{ backgroundColor: '#FF6B35' }}
               >

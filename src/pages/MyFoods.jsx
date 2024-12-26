@@ -6,6 +6,7 @@ import useAxiosSecure from "../hooks/useAxiosSecure";
 import { ArrowUpDown, Clock, MapPin, ChefHat, DollarSign } from "lucide-react";
 import Loading from "../pages/Loading";
 import { Helmet } from "react-helmet-async";
+import { useNavigate } from "react-router-dom";
 
 const fetchFoodById = async (email, axiosSecure) => {
     window.scrollTo(0, 0);
@@ -19,6 +20,7 @@ const MyFoods = () => {
     const queryClient = useQueryClient();
     const [selectedFood, setSelectedFood] = useState(null);
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const navigate = useNavigate();
 
     const { data: foods, isLoading, isError, error } = useQuery({
         queryKey: ["food", user?.email],
@@ -130,7 +132,7 @@ const MyFoods = () => {
                                         </td>
                                         <td className="p-3 md:p-4">
                                             <div className="space-y-2">
-                                                <h3 className="text-base sm:text-xl font-semibold text-light-text-primary dark:text-dark-text-primary">
+                                                <h3 onClick={() => navigate(`/food/${food._id}`)} className="text-base btn-link hover:cursor-pointer sm:text-xl font-semibold text-light-text-primary dark:text-dark-text-primary">
                                                     {food.foodName}
                                                 </h3>
                                                 <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 text-sm text-light-text-secondary dark:text-dark-text-secondary">
