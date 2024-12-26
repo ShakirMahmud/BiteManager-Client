@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 const Loading = () => {
     const location = useLocation();
     return (
-        <div className={`flex ${location.pathname === "/" ? "h-auto" : "min-h-screen"} justify-center items-center bg-light-background dark:bg-dark-background`}>
+        <div className={`flex ${location.pathname === "/" || location.pathname === "/allFoods" ? "h-auto" : "min-h-screen"} justify-center items-center bg-light-background dark:bg-dark-background`}>
             <span className="loading loading-spinner text-primary"></span>
             <span className="loading loading-spinner text-secondary"></span>
             <span className="loading loading-spinner text-accent"></span>
