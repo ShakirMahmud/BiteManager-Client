@@ -94,15 +94,6 @@ BiteManager is a comprehensive restaurant management system built with the MERN 
 - **Axios**: For HTTP requests.  
 - **Lottie React**: For animations.  
 
----
-
-## Key Commit Highlights  
-
-### Client Side  
-- Minimum 15 meaningful commits with descriptive messages for UI and functionality updates.  
-
-### Server Side  
-- Minimum 8 meaningful commits with descriptive messages for backend implementation.  
 
 ---
 
@@ -111,5 +102,9 @@ BiteManager is a comprehensive restaurant management system built with the MERN 
 - **Pagination**: Server-side pagination for "All Foods" page.  
 - **Search Functionality**: Food items can be searched by name.  
 - **Theme Toggle**: Allows users to switch between light and dark modes.  
+
+---
+
+## [Installation Guide](https://docs.google.com/document/d/1jGC2TAjMNN5dh-RQoc1NNIznNOT_ocnTIWKx7_Xn9Xg/edit?usp=sharing)
 
 Enjoy exploring BiteManager! 🍴
