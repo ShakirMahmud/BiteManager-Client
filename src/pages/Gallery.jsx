@@ -48,6 +48,9 @@ const Gallery = () => {
       setVisibleImages((prevImages) => [...prevImages, ...nextImages]);
     }
   };
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,9 +80,9 @@ const Gallery = () => {
           className="relative w-full bg-cover bg-center h-80 flex flex-col items-center justify-center text-center px-4"
           style={{ backgroundImage: `url(${img})` }}
         >
-          <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+          <div className="absolute inset-0 bg-black bg-opacity-60"></div>
           <h1 className="relative text-5xl md:text-7xl font-bold text-dark-text-primary z-10">Food Gallery</h1>
-          <p className="relative z-10 text-lg md:text-2xl font-semibold text-light-secondary dark:text-dark-secondary mt-4">
+          <p className="relative z-10 text-lg md:text-2xl font-semibold text-gray-200 mt-4">
             Discover and explore delicious meals shared by our community.
           </p>
         </div>

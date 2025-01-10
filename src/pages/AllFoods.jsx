@@ -14,7 +14,7 @@ const AllFoods = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const navigate = useNavigate();
 
-    const itemsPerPage = 9;
+    const itemsPerPage = 8;
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -76,7 +76,7 @@ const AllFoods = () => {
                 style={{ backgroundImage: `url(${img})` }}
             >
                 {/* Dark Overlay */}
-                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
                 {/* Title */}
                 <h1 className="relative text-5xl md:text-7xl font-bold text-dark-text-primary z-10">
@@ -84,7 +84,7 @@ const AllFoods = () => {
                 </h1>
 
                 {/* Subtitle */}
-                <p className="relative z-10 text-lg md:text-2xl font-semibold text-light-secondary dark:text-dark-secondary mt-4">
+                <p className="relative z-10 text-lg md:text-2xl font-semibold text-gray-200 mt-4">
                     Discover the Best Foods!
                 </p>
 
@@ -111,7 +111,7 @@ const AllFoods = () => {
                 {isLoading ? (
                     <Loading />
                 ) : foods.length > 0 ? (
-                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
                         {foods.map((food) => (
                             <div
                                 key={food._id}

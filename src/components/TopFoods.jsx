@@ -33,7 +33,7 @@ const TopFoods = () => {
     }
 
     return (
-        <div className="w-4/5 mx-auto py-16">
+        <div className="w-11/12 lg:w-4/5 mx-auto py-16">
             {/* Title and Subtitle */}
             <motion.div
                 className="text-center mb-8"
@@ -41,7 +41,7 @@ const TopFoods = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-                <h2 className="text-4xl font-bold text-light-primary dark:text-light-primary">Top Selling Foods</h2>
+                <h2 className="text-2xl lg:text-4xl font-bold text-light-primary dark:text-light-primary">Top Selling Foods</h2>
                 <p className="text-gray-500 dark:text-light-text-muted text-lg mt-2">
                     These foods are highly purchased by our customers!
                 </p>

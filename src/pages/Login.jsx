@@ -89,6 +89,12 @@ const Login = () => {
                 <title>Login - BiteManager</title>
             </Helmet>
             <div className="card bg-light-card dark:bg-dark-card w-full max-w-xl mx-auto p-6 rounded-xl shadow-2xl">
+                <h2 className="text-3xl font-bold text-center text-gray-800 dark:text-gray-100 mb-6">
+                    Welcome Back
+                </h2>
+                <p className="text-center text-gray-600 dark:text-gray-300">
+                    Sign in to continue to BiteManager
+                </p>
                 <form onSubmit={handleSignIn} className="card-body">
                     <div className="form-control mb-4">
                         <label className="label">

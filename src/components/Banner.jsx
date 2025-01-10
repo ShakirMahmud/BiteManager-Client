@@ -19,7 +19,7 @@ const Banner = () => {
         pagination={{ clickable: true }}
         autoplay={{ delay: 5000 }}
         loop={true}
-        className="w-full h-[70vh] lg:h-[85vh] custom-swiper"
+        className="w-full h-[50vh] lg:h-[70vh] custom-swiper"
       >
         {/* Slide 1 */}
         <SwiperSlide>

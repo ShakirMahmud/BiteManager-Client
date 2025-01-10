@@ -37,10 +37,10 @@ const WhyPeopleChoseUs = () => {
 
   return (
     <div className="bg-light-card dark:bg-dark-background text-light-text-primary dark:text-dark-text-primary px-6 py-12 lg:px-20">
-      <h2 className="text-2xl lg:text-4xl font-bold text-center mb-4">
+      <h2 className="text-2xl lg:text-4xl font-bold text-light-primary dark:text-light-primary text-center mb-4">
         WHY PEOPLE CHOOSE US
       </h2>
-      <p className="text-center text-light-text-secondary dark:text-dark-text-secondary mb-12">
+      <p className="text-gray-500 dark:text-light-text-muted text-center mb-12">
         Clients’ Most Popular Choice
       </p>
       <div className="flex flex-col lg:flex-row justify-center items-center gap-12">

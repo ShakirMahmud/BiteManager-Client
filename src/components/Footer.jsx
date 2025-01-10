@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaGithub, FaReddit } from 'react-icons/fa';
+import { FaFacebook, FaGithub, FaLinkedin, FaGlobe } from 'react-icons/fa';
 
 const Footer = () => {
     return (
-        <footer className=" text-light-text-primary dark:text-dark-text-primary">
+        <footer className="text-light-text-primary dark:text-dark-text-primary">
             <div className="container px-6 py-10 mx-auto">
                 <div className="lg:flex">
                     {/* Brand Section */}
@@ -18,18 +18,22 @@ const Footer = () => {
                             </span>
                         </Link>
                         <p className="max-w-sm mt-4 text-light-text-muted dark:text-dark-text-muted">
-                            Join 31,000+ others and never miss out on new tips, tutorials, and updates.
+                            Revolutionizing restaurant management with innovative technology and seamless user experiences.
                         </p>
                         <div className="flex mt-6 space-x-4">
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/shakirmahmud9/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-light-text-muted dark:text-dark-text-muted hover:text-light-secondary dark:hover:text-dark-secondary"
-                                aria-label="Reddit"
+                                aria-label="LinkedIn"
                             >
-                                <FaReddit size={24} />
+                                <FaLinkedin size={24} />
                             </a>
                             <a
                                 href="https://www.facebook.com/shakir.mahmud.9/"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-light-text-muted dark:text-dark-text-muted hover:text-light-secondary dark:hover:text-dark-secondary"
                                 aria-label="Facebook"
                             >
@@ -37,64 +41,58 @@ const Footer = () => {
                             </a>
                             <a
                                 href="https://github.com/ShakirMahmud"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="text-light-text-muted dark:text-dark-text-muted hover:text-light-secondary dark:hover:text-dark-secondary"
                                 aria-label="Github"
                             >
                                 <FaGithub size={24} />
+                            </a>
+                            <a
+                                href="https://shakir-portfolio.vercel.app/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-light-text-muted dark:text-dark-text-muted hover:text-light-secondary dark:hover:text-dark-secondary"
+                                aria-label="Portfolio"
+                            >
+                                <FaGlobe size={24} />
                             </a>
                         </div>
                     </div>
 
                     {/* Navigation Links */}
                     <div className="lg:flex-1">
-                        <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-4">
-                            {/* About Section */}
+                        <div className="grid grid-cols-2 gap-6 sm:grid-cols-2 md:grid-cols-3">
+                            {/* Quick Links */}
                             <div>
-                                <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">About</h3>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Company
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Community
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Careers
-                                </a>
+                                <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">Quick Links</h3>
+                                <Link to="/allFoods" className="block mt-2 text-sm hover:underline">
+                                    All Foods
+                                </Link>
+                                <Link to="/gallery" className="block mt-2 text-sm hover:underline">
+                                    Gallery
+                                </Link>
+                                <Link to="/myFoods" className="block mt-2 text-sm hover:underline">
+                                    My Foods
+                                </Link>
                             </div>
 
-                            {/* Blog Section */}
+                            {/* Services */}
                             <div>
-                                <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">Blog</h3>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Tech
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Music
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Videos
-                                </a>
+                                <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">Services</h3>
+                                <Link to="/addFood" className="block mt-2 text-sm hover:underline">
+                                    Add Food
+                                </Link>
+                                <Link to="/myOrders" className="block mt-2 text-sm hover:underline">
+                                    My Orders
+                                </Link>
                             </div>
 
-                            {/* Products Section */}
-                            <div>
-                                <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">Products</h3>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Mega Cloud
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Aperion UI
-                                </a>
-                                <a href="#" className="block mt-2 text-sm hover:underline">
-                                    Meraki UI
-                                </a>
-                            </div>
-
-                            {/* Contact Section */}
+                            {/* Contact */}
                             <div>
                                 <h3 className="text-light-secondary dark:text-dark-secondary font-semibold uppercase">Contact</h3>
-                                <span className="block mt-2 text-sm">+1 526 654 8965</span>
-                                <span className="block mt-2 text-sm overflow-hidden">shakirmahmud50@gmail.com</span>
+                                <span className="block mt-2 text-sm">shakirmahmud50@gmail.com</span>
+                                <span className="block mt-2 text-sm">Dhaka, Bangladesh</span>
                             </div>
                         </div>
                     </div>
