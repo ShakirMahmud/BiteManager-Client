@@ -64,7 +64,7 @@ const Gallery = () => {
   }, [visibleImages]);
 
   return (
-    <div className="bg-light-background dark:bg-dark-background min-h-screen py-10 flex flex-col items-center">
+    <div className="bg-light-background dark:bg-dark-background min-h-screen pb-12 flex flex-col items-center">
       <Helmet>
         <title>Gallery - BiteManager</title>
       </Helmet>

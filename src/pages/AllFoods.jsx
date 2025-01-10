@@ -66,7 +66,7 @@ const AllFoods = () => {
 
 
     return (
-        <div className="min-h-screen py-12 bg-light-background dark:bg-dark-background transition-colors duration-300">
+        <div className="min-h-screen pb-12 bg-light-background dark:bg-dark-background transition-colors duration-300">
             <Helmet>
                 <title>All Foods - BiteManager</title>
             </Helmet>
