@@ -109,6 +109,6 @@ const Footer = () => {
         </footer>
     );
 };
-// comment
+// commen
 
 export default Footer;
